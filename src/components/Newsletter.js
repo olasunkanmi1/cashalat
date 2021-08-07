@@ -37,6 +37,7 @@ const Input = styled.div`
         height: 100%;
         outline: none;
         border: none;
+        cursor: pointer;
     }
 `
 

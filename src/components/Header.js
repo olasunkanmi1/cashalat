@@ -12,14 +12,37 @@ const Container = styled(Link)`
     align-items: center;
     height: 75px;
     width: 100%;
-    padding: 1rem 5rem;
+    padding: 1rem 6rem;
     z-index: 10;
+    position: fixed;
+    top: 0;
+    background: #fff;
     border-bottom: 1px solid #ccc;
+
+    @media screen and (max-width: 1000px) {
+        padding: 1rem 5rem;
+    }
+
+    @media screen and (max-width: 920px) {
+        padding: 1rem 4.5rem;
+    }
+
+    @media screen and (max-width: 850px) {
+        padding: 1rem 4rem;
+    }
+
+    @media screen and (max-width: 768px) {
+        padding: 1rem 3rem;
+    }
+
+    @media screen and (max-width: 450px) {
+        padding: 1rem 1.5rem;
+    }
 `
 
 const Logo = styled(Link)`
     img {
-        height: 50px;
+        height: 40px;
     }
 `
 
@@ -47,7 +70,7 @@ const MenuLinks = styled(Link)`
     display: flex;
     font-size: 20px;
     color: #8D8D8D;
-    margin-right: 15px;
+    margin-right: 45px;
     transition: .3s;
 
     &:last-child {
@@ -59,13 +82,13 @@ const MenuLinks = styled(Link)`
     }
 `
 
-const Header = () => {
+const Header = ({ isOpen,toggle }) => {
     return (
         <Container>
             <Logo to="/">
                 <img src={logo} alt="logo" />
             </Logo>
-            <MenuBars />
+            <MenuBars onClick={toggle} />
             <MenuItems>
                 {menuData.map((item, index) => (
                     <MenuLinks to={item.link} key={index}>
