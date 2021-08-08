@@ -5,8 +5,9 @@ import styled, { css } from 'styled-components/macro'
 const Container = styled.section`
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 400px;
-    padding: 2rem 6rem 0 6rem;
+    grid-template-rows: 500px;
+    grid-gap: 20px;
+    padding: 2rem 6rem 1rem 6rem;
 
     @media screen and (max-width: 1000px) {
         padding: 2rem 5rem 0 5rem;
@@ -23,26 +24,35 @@ const Container = styled.section`
     @media screen and (max-width: 768px) {
         padding: 2rem 3rem 0 3rem;
         grid-template-columns: 1fr;
-        grid-template-rows: 200px auto;
+        grid-template-rows: 280px auto;
     }
 
     @media screen and (max-width: 700px) {
-        grid-template-rows: 250px auto;
+        grid-template-rows: 330px auto;
     }
 
     @media screen and (max-width: 450px) {
         padding: 2rem 1.5rem 0 1.5rem;
     }
+
+    @media screen and (max-width: 535px) {
+        grid-template-rows: 380px auto;
+    }
+    
+    @media screen and (max-width: 500px) {
+        grid-template-rows: 330px auto;
+    }
     
     @media screen and (max-width: 400px) {
-        grid-template-rows: 280px auto;
+        grid-template-rows: 350px auto;
     }
-    
-    @media screen and (max-width: 330px) {
-        grid-template-rows: 300px auto;
+
+    @media screen and (max-width: 345px) {
+        grid-template-rows: 400px auto;
     }
-    @media screen and (max-width: 300px) {
-        grid-template-rows: 320px auto;
+
+    @media screen and (max-width: 320px) {
+        grid-template-rows: 420px auto;
     }
 `
 
@@ -50,7 +60,6 @@ const Image = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    overflow: hidden;
     
     img {
         width: 100%;
@@ -60,11 +69,6 @@ const Image = styled.div`
 
     @media screen and (max-width: 768px) {
         order: 2;
-        height: 400px;
-    }
-    
-    @media screen and (max-width: 450px) {
-        height: 300px;
     }
 `
 
@@ -84,11 +88,11 @@ const Info = styled.div`
         background: #FF620F;
         color: #fff;
         border-radius: 10px;
-        width: 200px;
+        width: 250px;
 
         @media screen and (max-width: 500px) {
             font-size: 15px;
-            width: 150px;
+            width: 200px;
         }
     }
 
@@ -107,20 +111,24 @@ const Info = styled.div`
         font-size: 20px;
     }
 
-    @media screen and (max-width: 900px) {
-        padding: 4rem 0;
+    @media screen and (max-width: 1315px) {
+        padding: 3rem 0;
     }
     
-    @media screen and (max-width: 825px) {
+    @media screen and (max-width: 1000px) {
         padding: 2rem 0;
     }
-
-    @media screen and (max-width: 768px) {
+    
+    @media screen and (max-width: 900px) {
+        padding: 1rem 0;
+    }
+    
+    @media screen and (max-width: 820px) {
         padding: 0;
     }
 `
 
-const Smart = ({ top, heading, paragraph, image }) => {
+const Diversify = ({ top, heading, paragraph, image }) => {
     return (
         <Container>
             <Image>
@@ -135,4 +143,4 @@ const Smart = ({ top, heading, paragraph, image }) => {
     )
 }
 
-export default Smart
+export default Diversify

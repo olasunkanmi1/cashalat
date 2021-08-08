@@ -5,44 +5,46 @@ import styled, { css } from 'styled-components/macro'
 const Container = styled.section`
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 400px;
-    padding: 2rem 6rem 0 6rem;
+    grid-template-rows: 500px;
+    grid-gap: 20px;
+    padding: 2rem 6rem;
 
     @media screen and (max-width: 1000px) {
-        padding: 2rem 5rem 0 5rem;
+        padding: 2rem 5rem;
     }
 
     @media screen and (max-width: 920px) {
-        padding: 2rem 4.5rem 0 4.5rem;
+        padding: 2rem 4.5rem;
     }
 
     @media screen and (max-width: 850px) {
-        padding: 2rem 4rem 0 4rem;
+        padding: 2rem 4rem;
     }
 
     @media screen and (max-width: 768px) {
-        padding: 2rem 3rem 0 3rem;
+        padding: 2rem 3rem;
         grid-template-columns: 1fr;
-        grid-template-rows: 200px auto;
-    }
-
-    @media screen and (max-width: 700px) {
-        grid-template-rows: 250px auto;
+        grid-template-rows: 230px auto;
     }
 
     @media screen and (max-width: 450px) {
-        padding: 2rem 1.5rem 0 1.5rem;
+        padding: 2rem 1.5rem;
+    }
+
+    @media screen and (max-width: 600px) {
+        grid-template-rows: 260px auto;
     }
     
+    @media screen and (max-width: 500px) {
+        grid-template-rows: 230px auto;
+    }
+
     @media screen and (max-width: 400px) {
-        grid-template-rows: 280px auto;
+        grid-template-rows: 260px auto;
     }
     
     @media screen and (max-width: 330px) {
         grid-template-rows: 300px auto;
-    }
-    @media screen and (max-width: 300px) {
-        grid-template-rows: 320px auto;
     }
 `
 
@@ -50,7 +52,6 @@ const Image = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    overflow: hidden;
     
     img {
         width: 100%;
@@ -60,11 +61,10 @@ const Image = styled.div`
 
     @media screen and (max-width: 768px) {
         order: 2;
-        height: 400px;
     }
-    
-    @media screen and (max-width: 450px) {
-        height: 300px;
+
+    @media screen and (max-width: 310px) {
+        height: 200px;
     }
 `
 
@@ -72,7 +72,7 @@ const Info = styled.div`
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    padding: 5rem 0;
+    padding: 8rem 0;
 
     div {
         display: flex;
@@ -88,7 +88,7 @@ const Info = styled.div`
 
         @media screen and (max-width: 500px) {
             font-size: 15px;
-            width: 150px;
+            width: 200px;
         }
     }
 
@@ -107,20 +107,24 @@ const Info = styled.div`
         font-size: 20px;
     }
 
-    @media screen and (max-width: 900px) {
+    @media screen and (max-width: 1220px) {
+        padding: 6rem 0;
+    }
+    
+    @media screen and (max-width: 880px) {
         padding: 4rem 0;
     }
     
-    @media screen and (max-width: 825px) {
+    @media screen and (max-width: 780px) {
         padding: 2rem 0;
     }
-
+    
     @media screen and (max-width: 768px) {
         padding: 0;
     }
 `
 
-const Smart = ({ top, heading, paragraph, image }) => {
+const Loans = ({ top, heading, paragraph, image }) => {
     return (
         <Container>
             <Image>
@@ -135,4 +139,4 @@ const Smart = ({ top, heading, paragraph, image }) => {
     )
 }
 
-export default Smart
+export default Loans

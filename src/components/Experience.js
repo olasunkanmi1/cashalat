@@ -24,11 +24,11 @@ const Container = styled.section`
     }
 
     @media screen and (max-width: 768px) {
-        padding: 4rem 3rem;
+        padding: 4rem 3rem 0 3rem;
     }
 
     @media screen and (max-width: 450px) {
-        padding: 4rem 1.5rem;
+        padding: 4rem 1.5rem 0 1.5rem;
     }
 `
 
@@ -122,10 +122,6 @@ const Image = styled.div`
         width: 100%;
         height: 100%;
         object-fit: contain;
-
-        @media screen and (max-width: 1300px) {
-            // object-fit: cover;
-        }
     }
 
     @media screen and (max-width: 500px) {

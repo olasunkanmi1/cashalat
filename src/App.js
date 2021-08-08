@@ -5,6 +5,7 @@ import GlobalStyles from "./GlobalStyles";
 // components
 import Header from "./components/Header";
 import Sidebar from "./components/Sidebar"
+import Footer from './components/Footer';
 
 // pages
 import Homepage from "./pages/Homepage";
@@ -25,6 +26,7 @@ function App() {
       <Switch>
         <Route path="/" exact component={Homepage} />
       </Switch>
+      <Footer />
     </Router>
   );
 }
