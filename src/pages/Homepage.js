@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
 //components
 import Experience from '../components/Experience'
@@ -12,6 +12,11 @@ import Loans from '../components/Loans'
 import {experience, smart, savings, diversify, payments, loans} from '../data/HomepageData'
 
 const Homepage = () => {
+
+    useEffect(() => {
+        window.scrollTo(0,0)
+    }, [])
+
     return (
         <>
            <Experience {...experience}/>

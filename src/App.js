@@ -8,6 +8,7 @@ import Footer from './components/Footer';
 
 // pages
 import Homepage from "./pages/Homepage";
+import Company from './pages/Company';
 
 function App() {
 
@@ -23,6 +24,7 @@ function App() {
       <Header/>
       <Switch>
         <Route path="/" exact component={Homepage} />
+        <Route path="/company" exact component={Company} />
       </Switch>
       <Footer />
     </Router>

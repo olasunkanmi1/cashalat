@@ -16,6 +16,7 @@ const Container = styled.div`
     transition: .6s ease-in-out;
     opacity: ${({ isOpen }) => (isOpen ? '1' : '0')};
     top: ${({ isOpen }) => (isOpen ? '0' : '-100%')};
+    border-bottom: 1px solid #ccc;
 `
 
 const Close = styled(AiOutlineClose)`
