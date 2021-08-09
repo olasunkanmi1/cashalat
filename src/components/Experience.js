@@ -10,6 +10,7 @@ const Container = styled.section`
     width: 100%;
     padding: 4rem 6rem;
     margin-top: 75px;
+    overflow: hidden;
 
     @media screen and (max-width: 1000px) {
         padding: 4rem 5rem;
@@ -24,11 +25,11 @@ const Container = styled.section`
     }
 
     @media screen and (max-width: 768px) {
-        padding: 4rem 3rem 0 3rem;
+        padding: 3rem 3rem 0 3rem;
     }
 
     @media screen and (max-width: 450px) {
-        padding: 4rem 1.5rem 0 1.5rem;
+        padding: 2rem 1.5rem 0 1.5rem;
     }
 `
 
@@ -67,6 +68,14 @@ const Wrapper = styled.div`
         @media screen and (max-width: 360px) {
             grid-template-rows: 500px auto;
         }
+        
+        @media screen and (max-width: 330px) {
+            grid-template-rows: 550px auto;
+        }
+        
+        @media screen and (max-width: 295px) {
+            grid-template-rows: 570px auto;
+        }
 `
 
 const Info = styled.div`
@@ -99,7 +108,6 @@ const Info = styled.div`
 
 const Download = styled .div`  
     display: flex;
-    padding-right: 30px;
 
     img {
         height: 40px;
@@ -107,6 +115,10 @@ const Download = styled .div`
 
         @media screen and (max-width: 360px) {
             height: 35px;
+        }
+        
+        @media screen and (max-width: 320px) {
+            height: 30px;
         }
     }
 `
@@ -140,7 +152,7 @@ const GetStarted = ({ heading, paragraph, playstore, applestore, image }) => {
                     <Link to="/"><img src={playstore} alt="playstore" /></Link>
                     <Link to="/"><img src={applestore} alt="applestore" /></Link>
                 </Download>
-                <Newsletter css={`width: 80%;`} />
+                <Newsletter />
             </Info>
             <Image>
                 <img src={image} alt="experience banking" />

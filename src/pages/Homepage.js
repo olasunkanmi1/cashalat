@@ -7,7 +7,6 @@ import Savings from '../components/Savings'
 import Diversify from '../components/Diversify'
 import Payments from '../components/Payments'
 import Loans from '../components/Loans'
-import Download from '../components/Download'
 
 //datas
 import {experience, smart, savings, diversify, payments, loans} from '../data/HomepageData'
@@ -21,7 +20,6 @@ const Homepage = () => {
            <Diversify {...diversify} />
            <Payments {...payments} />
            <Loans {...loans} />
-           <Download />
         </>
     )
 }

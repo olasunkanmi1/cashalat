@@ -1,9 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import styled, { css } from 'styled-components/macro'
 import logo from '../images/logo.png'
 import {AiOutlineMenu} from 'react-icons/ai'
 import { menuData } from '../data/MenuData'
+import Sidebar from './Sidebar'
 
 //styles
 const Container = styled(Link)`
@@ -82,9 +83,17 @@ const MenuLinks = styled(Link)`
     }
 `
 
-const Header = ({ isOpen,toggle }) => {
+const Header = () => {
+
+    const [isOpen, setIsOpen] = useState(false)
+
+    const toggle = () => {
+      setIsOpen(!isOpen)
+    }
+
     return (
-        <Container>
+        <>
+        <Container toggle={toggle}>
             <Logo to="/">
                 <img src={logo} alt="logo" />
             </Logo>
@@ -97,6 +106,8 @@ const Header = ({ isOpen,toggle }) => {
                 ))}
             </MenuItems>
         </Container>
+        <Sidebar isOpen={isOpen} setIsOpen={setIsOpen} toggle={toggle} />
+        </>
     )
 }
 

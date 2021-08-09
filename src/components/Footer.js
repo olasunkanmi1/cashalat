@@ -2,34 +2,37 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import styled, { css } from 'styled-components/macro'
 import logo from '../images/logo2.png'
+import Download from './Download'
 
 //styles
 const Container = styled.footer`
     display: grid;
     grid-template-columns: 30% 70%;
-    padding: 3rem 6rem;
+    padding: 6rem 6rem 2rem 6rem;
     background: #0847A8;
     color: #fff;
 
     @media screen and (max-width: 1000px) {
-        padding: 3rem 5rem;
+        padding: 6rem 5rem 2rem 5rem;
     }
 
     @media screen and (max-width: 920px) {
-        padding: 3rem 4.5rem;
+        grid-template-columns: 1fr;
+        grid-template-rows: 80px auto auto;
+        padding: 6rem 4.5rem 2rem 4.5rem;
     }
 
     @media screen and (max-width: 850px) {
-        padding: 3rem 4rem;
+        padding: 6rem 4rem 2rem 4rem;
     }
 
     @media screen and (max-width: 768px) {
-        padding: 3rem 3rem;
+        padding: 6rem 3rem 2rem 3rem;
         flex-direction: column;
     }
 
     @media screen and (max-width: 450px) {
-        padding: 3rem 1.5rem;
+        padding: 6rem 1.5rem 2rem 1.5rem;
     }
 `
 
@@ -44,6 +47,11 @@ const Logo = styled.div`
         top: 50%;
         transform: translateY(-50%);
     }
+
+    @media screen and (max-width: 920px) {
+        grid-column: 1 / 3;
+    }
+    
 `
 
 const Wrapper = styled.div`
@@ -66,15 +74,6 @@ const Wrapper = styled.div`
             }
         }
 
-        @media screen and (max-width: 870px) {
-            margin-right:  30px;
-        }
-
-        @media screen and (max-width: 768px) {
-            width: 33.3%;
-            margin-right:  15px;
-        }
-
         @media screen and (max-width: 500px) {
             width: 100%;
         }
@@ -84,6 +83,16 @@ const Wrapper = styled.div`
         margin-bottom: 1.3rem;
         font-weight: bold;
         font-size: 17px;
+    }
+
+    @media screen and (max-width: 620px) {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 30px;
+    }
+    
+    @media screen and (max-width: 330px) {
+        grid-template-columns: 1fr 1fr;
     }
 `
 
@@ -102,7 +111,8 @@ const Cr = styled.div`
 `
 
 const Footer = () => {
-    return (
+    return (<>
+        <Download />
         <Container>
             <Logo>
                 <img src={logo} alt="logo" />
@@ -154,6 +164,7 @@ const Footer = () => {
                 <p>Registered Address: Plot 1 Prince Adeyinka Avenue, off Ozumba Mbadiwe, Victoria Island, Lagos.</p>
             </Cr>
         </Container>
+        </>
     )
 }
 

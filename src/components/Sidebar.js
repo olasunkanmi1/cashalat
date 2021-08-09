@@ -8,15 +8,14 @@ const Container = styled.div`
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 100%;
     background: #fff;
-    z-index: 999;
+    z-index: 9;
     position: fixed;
     top: 0;
     right: 0;
-    transition: .3s ease-in-out;
+    transition: .6s ease-in-out;
     opacity: ${({ isOpen }) => (isOpen ? '1' : '0')};
-    right: ${({ isOpen }) => (isOpen ? '0' : '-100%')};
+    top: ${({ isOpen }) => (isOpen ? '0' : '-100%')};
 `
 
 const Close = styled(AiOutlineClose)`
@@ -47,10 +46,14 @@ const SidebarMenuLink = styled(Link)`
     font-weight: 500;
     letter-spacing: 5px;
     text-decoration: none;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     width: 100%;
     height: 60px;
     transition: .3s;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
 
     &:hover {
         color: #0847A8;

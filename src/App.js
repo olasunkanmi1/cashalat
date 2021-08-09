@@ -4,7 +4,6 @@ import GlobalStyles from "./GlobalStyles";
 
 // components
 import Header from "./components/Header";
-import Sidebar from "./components/Sidebar"
 import Footer from './components/Footer';
 
 // pages
@@ -21,8 +20,7 @@ function App() {
   return (
     <Router>
       <GlobalStyles />
-      <Header toggle={toggle} />
-      <Sidebar isOpen={isOpen} setIsOpen={setIsOpen} toggle={toggle} />
+      <Header/>
       <Switch>
         <Route path="/" exact component={Homepage} />
       </Switch>

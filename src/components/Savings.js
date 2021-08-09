@@ -22,7 +22,7 @@ const Container = styled.section`
     }
 
     @media screen and (max-width: 768px) {
-        padding: 2rem 3rem 0 3rem;
+        padding: 2rem 3rem;
         grid-template-columns: 1fr;
         grid-template-rows: 250px auto;
     }
@@ -32,7 +32,7 @@ const Container = styled.section`
     }
 
     @media screen and (max-width: 450px) {
-        padding: 2rem 1.5rem 0 1.5rem;
+        padding: 2rem 1.5rem;
     }
 
     @media screen and (max-width: 535px) {
