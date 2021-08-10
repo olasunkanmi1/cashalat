@@ -156,6 +156,7 @@ const Footer = () => {
                     <a href="/">Twitter</a>
                     <a href="/">Facebook</a>
                     <a href="/">Instagram</a>
+                    <a href="/">Youtube</a>
                 </div>
             </Wrapper>
             <Cr>

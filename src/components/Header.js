@@ -69,6 +69,8 @@ const MenuItems = styled(Link)`
 
 const MenuLinks = styled(Link)`
     display: flex;
+    align-items: center;
+    justify-content: center;
     font-size: 20px;
     color: #8D8D8D;
     margin-right: 45px;
@@ -101,7 +103,7 @@ const Header = () => {
             <MenuItems>
                 {menuData.map((item, index) => (
                     <MenuLinks to={item.link} key={index}>
-                        {item.title}
+                        {item.title} {item.icon}
                     </MenuLinks>
                 ))}
             </MenuItems>

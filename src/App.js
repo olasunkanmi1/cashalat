@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import GlobalStyles from "./GlobalStyles";
 
@@ -9,14 +9,13 @@ import Footer from './components/Footer';
 // pages
 import Homepage from "./pages/Homepage";
 import Company from './pages/Company';
+import FeatureSavings from './pages/FeatureSavings';
+import FeatureInvestments from './pages/FeatureInvestments';
+import FeatureLoans from './pages/FeatureLoans';
+import FeaturePayments from './pages/FeaturePayments';
+import CompanyCulture from './pages/CompanyCulture';
 
 function App() {
-
-  const [isOpen, setIsOpen] = useState(false)
-
-    const toggle = () => {
-      setIsOpen(!isOpen)
-    }
 
   return (
     <Router>
@@ -25,6 +24,11 @@ function App() {
       <Switch>
         <Route path="/" exact component={Homepage} />
         <Route path="/company" exact component={Company} />
+        <Route path="/features" exact component={FeatureSavings} />
+        <Route path="/features/investments" exact component={FeatureInvestments} />
+        <Route path="/features/loans" exact component={FeatureLoans} />
+        <Route path="/features/payments" exact component={FeaturePayments} />
+        <Route path="/company/culture" exact component={CompanyCulture} />
       </Switch>
       <Footer />
     </Router>
