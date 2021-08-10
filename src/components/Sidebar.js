@@ -56,11 +56,9 @@ const SidebarMenuLink = styled.div`
 
     &:nth-child(1) {
         height: 130px;
-        margin-bottom: 40px;
     }
     &:nth-child(2) {
         height: 100px;
-        margin-bottom: 40px;
     }
 
     &:last-child {
