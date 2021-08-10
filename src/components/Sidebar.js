@@ -34,7 +34,6 @@ const SidebarMenu = styled.div`
     align-items: center;
     flex-direction: column;
     width: 100%;
-    height: 100%;
     margin-top: 4rem;
     padding: 1rem;
 `
@@ -56,9 +55,11 @@ const SidebarMenuLink = styled.div`
 
     &:nth-child(1) {
         height: 130px;
+        margin-bottom: 40px;
     }
     &:nth-child(2) {
-        height: 100px;
+        height: 170px;
+        margin-bottom: 40px;
     }
 
     &:last-child {
