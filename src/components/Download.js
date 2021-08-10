@@ -20,6 +20,10 @@ const Container = styled.section`
         font-weight: 700;
         color: #0847A8;
 
+        @media screen and (max-width: 350px) {
+            font-size: 30px;
+        }
+
         @media screen and (max-width: 320px) {
             font-size: 25px;
         }
@@ -29,6 +33,10 @@ const Container = styled.section`
         font-weight: 500;
         font-size: 20px;
         text-align: center;
+
+        @media screen and (max-width: 450px) {
+            font-size: 18px;
+        }
     }
 
     div {

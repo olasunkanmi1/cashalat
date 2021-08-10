@@ -1,5 +1,6 @@
 import styled from 'styled-components/macro'
 import {AiOutlineDown} from 'react-icons/ai'
+import '../components/rough.css'
 
 const SubMenu = styled(AiOutlineDown)`
     fill: #8D8D8D ;
@@ -9,7 +10,17 @@ const SubMenu = styled(AiOutlineDown)`
 `
 
 export const menuData =[
-    {title: "Company", link: "/company", icon: <SubMenu />},
-    {title: "Features", link: "/features", icon: <SubMenu />},
-    {title: "Help", link: "/help"}
+    {title: "Company", icon: <SubMenu className="sm" />, submenu: [
+        {title: 'company-1', link: "/company/company-1"}, 
+        {title: 'company culture', link: "/company/company-culture"}]
+    },
+
+    {title: "Features", icon: <SubMenu className="sm" />, submenu: [
+        {title: 'savings', link: "/features/savings"}, 
+        {title: 'Investments', link: "/features/investments"},
+        {title: 'loans', link: "/features/loans"},
+        {title: 'payments', link: "/features/payments"}]
+    },
+
+    {title: "Help", link: "/help", submenu: []}
 ];

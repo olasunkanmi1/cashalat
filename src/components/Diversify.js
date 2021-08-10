@@ -40,19 +40,15 @@ const Container = styled.section`
     }
     
     @media screen and (max-width: 500px) {
-        grid-template-rows: 330px auto;
-    }
-    
-    @media screen and (max-width: 400px) {
-        grid-template-rows: 350px auto;
+        grid-template-rows: 320px auto;
     }
 
     @media screen and (max-width: 345px) {
-        grid-template-rows: 400px auto;
+        grid-template-rows: 350px auto;
     }
 
     @media screen and (max-width: 320px) {
-        grid-template-rows: 420px auto;
+        grid-template-rows: 370px auto;
     }
 `
 
@@ -88,11 +84,11 @@ const Info = styled.div`
         background: #FF620F;
         color: #fff;
         border-radius: 10px;
-        width: 250px;
+        width: 270px;
 
         @media screen and (max-width: 500px) {
             font-size: 15px;
-            width: 200px;
+            width: 220px;
         }
     }
 
@@ -104,11 +100,19 @@ const Info = styled.div`
         @media screen and (max-width: 500px) {
             font-size: 40px;
         }
+        
+        @media screen and (max-width: 420px) {
+            font-size: 35px;
+        }
     }
 
     p {
         color: #8D8D8D;
         font-size: 20px;
+
+        @media screen and (max-width: 450px) {
+            font-size: 18px;
+        }
     }
 
     @media screen and (max-width: 1315px) {

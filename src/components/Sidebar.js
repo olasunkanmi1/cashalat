@@ -3,6 +3,7 @@ import styled, { css } from 'styled-components/macro'
 import { menuData } from '../data/MenuData'
 import { Link } from 'react-router-dom'
 import { AiOutlineClose } from 'react-icons/ai'
+import './rough.css'
 
 const Container = styled.div`
     display: flex;
@@ -38,19 +39,28 @@ const SidebarMenu = styled.div`
     padding: 1rem;
 `
 
-const SidebarMenuLink = styled(Link)`
+const SidebarMenuLink = styled.div`
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     color: #8D8D8D;
     font-size: 1.5rem;
     font-weight: 500;
     letter-spacing: 5px;
     text-decoration: none;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     width: 100%;
-    height: 60px;
     transition: .3s;
+    position: relative;
+    cursor: pointer;
+
+    &:nth-child(1) {
+        height: 130px;
+    }
+    &:nth-child(2) {
+        height: 100px;
+    }
 
     &:last-child {
         margin-bottom: 0;
@@ -58,6 +68,39 @@ const SidebarMenuLink = styled(Link)`
 
     &:hover {
         color: #0847A8;
+    }
+
+    @media screen and (max-width: 320px) {
+        font-size: 1.3rem;
+    }
+`
+
+const SubMenu = styled.div`
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+    background: #0847A8;
+    border-radius: 10px;
+`
+
+const SubMenuLinks = styled(Link)`
+    margin-bottom: 10px;
+    color: #fff;
+    font-size: 1.2rem;
+    transition: .5s;
+
+    @media screen and (max-width: 320px) {
+        font-size: 1rem;
+    }
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    &:hover {
+        color: #FF620F;
     }
 `
 
@@ -67,8 +110,15 @@ const Sidebar = ({ isOpen, toggle }) => {
             <Close onClick={toggle} />
             <SidebarMenu>
                 {menuData.map((item, index) => (
-                    <SidebarMenuLink to={item.link} key={index}>
-                        {item.title}
+                    <SidebarMenuLink key={index} className="menu">
+                        <div>{item.title} {item.icon}</div>
+                        <SubMenu className="sub-menu">
+                            {item.submenu.map((item, index) => (
+                                <SubMenuLinks key={index} to={item.link}>
+                                    {item.title}
+                                </SubMenuLinks>
+                            ))}
+                        </SubMenu>
                     </SidebarMenuLink>
                 ))}
             </SidebarMenu>

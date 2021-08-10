@@ -47,15 +47,15 @@ const Container =  styled.section`
             width: 70%;
         }
         
-        @media screen and (max-width: 1000px) {
+        @media screen and (max-width: 1100px) {
             width: 90%;
         }
         
-        @media screen and (max-width: 750px) {
+        @media screen and (max-width: 840px) {
             width: 100%;
         }
         
-        @media screen and (max-width: 670px) {
+        @media screen and (max-width: 730px) {
             font-size: 35px;
         }
 `
@@ -94,11 +94,11 @@ const Info1 = styled.div`
     padding: 10rem 6rem 10rem 0;
 
     @media screen and (max-width: 1300px) {
-        padding: 10rem 4rem 10rem 0;
+        padding: 10rem 4rem 10rem 2rem;
     }
     
     @media screen and (max-width: 1200px) {
-        padding: 10rem 2rem 10rem 0;
+        padding: 10rem 2rem 10rem 2rem;
     }
     
     @media screen and (max-width: 1100px) {
@@ -128,7 +128,7 @@ const Info1 = styled.div`
         width: 150px;
 
         @media screen and (max-width: 500px) {
-            font-size: 15px;
+            font-size: 18px;
             width: 100px;
         }
     }
@@ -136,6 +136,10 @@ const Info1 = styled.div`
     p {
         color: #8D8D8D;
         font-size: 20px;
+
+        @media screen and (max-width: 500px) {
+            font-size: 18px;
+        }
     }
 `
 
@@ -155,7 +159,10 @@ const Mis = styled.div`
     }
     
     @media screen and (max-width: 450px) {
-        flex-direction: column;
+        height: 430px;
+    }
+    
+    @media screen and (max-width: 370px) {
         height: 450px;
     }
 `
@@ -181,7 +188,7 @@ const Info2 = styled.div`
         width: 150px;
 
         @media screen and (max-width: 500px) {
-            font-size: 15px;
+            font-size: 18px;
             width: 100px;
         }
     }
@@ -189,6 +196,10 @@ const Info2 = styled.div`
     p {
         color: #8D8D8D;
         font-size: 20px;
+
+        @media screen and (max-width: 500px) {
+            font-size: 18px;
+        }
     }
 
     @media screen and (max-width: 800px) {

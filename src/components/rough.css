@@ -1,0 +1,8 @@
+.menu:hover .sub-menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu:hover .sm {
+    fill: #0847A8;
+}

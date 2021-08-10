@@ -23,12 +23,12 @@ function App() {
       <Header/>
       <Switch>
         <Route path="/" exact component={Homepage} />
-        <Route path="/company" exact component={Company} />
-        <Route path="/features" exact component={FeatureSavings} />
+        <Route path="/company/company-1" exact component={Company} />
+        <Route path="/features/savings" exact component={FeatureSavings} />
         <Route path="/features/investments" exact component={FeatureInvestments} />
         <Route path="/features/loans" exact component={FeatureLoans} />
         <Route path="/features/payments" exact component={FeaturePayments} />
-        <Route path="/company/culture" exact component={CompanyCulture} />
+        <Route path="/company/company-culture" exact component={CompanyCulture} />
       </Switch>
       <Footer />
     </Router>

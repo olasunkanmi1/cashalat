@@ -5,6 +5,7 @@ import logo from '../images/logo.png'
 import {AiOutlineMenu} from 'react-icons/ai'
 import { menuData } from '../data/MenuData'
 import Sidebar from './Sidebar'
+import './rough.css'
 
 //styles
 const Container = styled(Link)`
@@ -44,6 +45,10 @@ const Container = styled(Link)`
 const Logo = styled(Link)`
     img {
         height: 40px;
+
+        @media screen and (max-width: 340px) {
+            height: 35px;
+        }
     }
 `
 
@@ -56,25 +61,34 @@ const MenuBars = styled(AiOutlineMenu)`
         width: 40px;
         color: #0847A8;
         cursor: pointer;
+
+        @media screen and (max-width: 340px) {
+            height: 35px;
+            width: 35px;
+        }
     }
 `
 
 const MenuItems = styled(Link)`
     display: flex;
+    height: 100%;
 
     @media screen and (max-width: 768px) {
         display: none;
     }
 `
 
-const MenuLinks = styled(Link)`
+const MenuLinks = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 20px;
     color: #8D8D8D;
     margin-right: 45px;
-    transition: .3s;
+    transition: .5s;
+    position: relative;
+    height: 100%;
+    z-index: 11;
 
     &:last-child {
         margin-right: 0;
@@ -82,6 +96,34 @@ const MenuLinks = styled(Link)`
     
     &:hover {
         color: #0847A8;
+    }
+`
+
+const SubMenu = styled.div`
+    width: 170px;
+    position: absolute;
+    top: 0;
+    margin-top: 40px;
+    padding: 10px;
+    display: none;
+    z-index: 6;
+    background: #0847A8;
+    border-radius: 10px;
+`
+
+const SubMenuLinks = styled(Link)`
+    text-align: center;
+    margin-bottom: 10px;
+    color: #fff;
+    font-size: 17px;
+    transition: .5s;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    &:hover {
+        color: #FF620F;
     }
 `
 
@@ -102,8 +144,15 @@ const Header = () => {
             <MenuBars onClick={toggle} />
             <MenuItems>
                 {menuData.map((item, index) => (
-                    <MenuLinks to={item.link} key={index}>
+                    <MenuLinks key={index} className="menu">
                         {item.title} {item.icon}
+                        <SubMenu className="sub-menu">
+                            {item.submenu.map((item, index) => (
+                                <SubMenuLinks key={index} to={item.link}>
+                                    {item.title}
+                                </SubMenuLinks>
+                            ))}
+                        </SubMenu>
                     </MenuLinks>
                 ))}
             </MenuItems>

@@ -40,31 +40,39 @@ const Container = styled.section`
         height: 600px;
 
         h2 {
-            font-size: 40px;
+            font-size: 50px;
             font-weight: 700;
             color: #0847A8;
             text-align: center;
-            margin-bottom: 2rem;
-            width: 30%;
+            margin-bottom: 1.5rem;
+            width: 40%;
 
-            @media screen and (max-width: 970px) {
-                width: 40%;
-            }
-            
-            @media screen and (max-width: 770px) {
+            @media screen and (max-width: 980px) {
                 width: 50%;
             }
             
+            @media screen and (max-width: 790px) {
+                width: 60%;
+            }
+            
             @media screen and (max-width: 670px) {
-                font-size: 35px;
+                font-size: 45px;
             }
             
-            @media screen and (max-width: 530px) {
-                width: 70%;
+            @media screen and (max-width: 600px) {
+                width: 80%;
+            }
+
+            @media screen and (max-width: 500px) {
+                margin-bottom: 1rem;
             }
             
-            @media screen and (max-width: 360px) {
+            @media screen and (max-width: 470px) {
+                font-size: 40px;
                 width: 100%;
+            }
+            @media screen and (max-width: 320px) {
+                font-size: 35px;
             }
         }
 
@@ -75,7 +83,13 @@ const Container = styled.section`
         @media screen and (max-width: 700px) {
             height: 400px;
         }
-       
+        @media screen and (max-width: 600px) {
+            height: 370px;
+        }  
+        @media screen and (max-width: 500px) {
+            height: 400px;
+        }  
+
         @media screen and (max-width: 400px) {
             height: 300px;
         }
@@ -92,11 +106,16 @@ const Image = styled.div`
     position: absolute;
     bottom: -150px;
 
+    @media screen and (max-width: 500px) {
+        height: 550px;
+    }
+
     img {
         width: 100%;
         height: 100%;
         object-fit: contain;
     }
+   
 `
 
 const Explore = () => {

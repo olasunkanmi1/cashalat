@@ -9,26 +9,26 @@ const Container = styled.section`
     display: flex;
     flex-direction: column;
     background: #E5F9FF;
-    padding: 9rem 6rem 2rem 6rem;
+    padding: 10rem 6rem 2rem 6rem;
 
     @media screen and (max-width: 1000px) {
-        padding: 9rem 5rem 2rem 5rem;
+        padding: 10rem 5rem 2rem 5rem;
     }
 
     @media screen and (max-width: 920px) {
-        padding: 9rem 4.5rem 0 4.5rem;
+        padding: 10rem 4.5rem 0 4.5rem;
     }
 
     @media screen and (max-width: 850px) {
-        padding: 9rem 4rem 0 4rem;
+        padding: 10rem 4rem 0 4rem;
     }
 
     @media screen and (max-width: 768px) {
-        padding: 9rem 3rem 0 3rem;
+        padding: 10rem 3rem 0 3rem;
     }
 
     @media screen and (max-width: 450px) {
-        padding: 9rem 1.5rem 0 1.5rem;
+        padding: 10rem 1.5rem 0 1.5rem;
     }
 
     h4 {

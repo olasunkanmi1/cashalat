@@ -99,10 +99,18 @@ const Info = styled.div`
         @media screen and (max-width: 610px) {
             font-size: 45px;
         }
+
+        @media screen and (max-width: 420px) {
+            font-size: 40px;
+        }
     }
 
     p {
         font-size: 20px;
+
+        @media screen and (max-width: 450px) {
+            font-size: 18px;
+        }
     }
 `
 

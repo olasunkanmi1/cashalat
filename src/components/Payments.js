@@ -42,10 +42,6 @@ const Container = styled.section`
     @media screen and (max-width: 400px) {
         grid-template-rows: 280px auto;
     }
-
-    @media screen and (max-width: 330px) {
-        grid-template-rows: 320px auto;
-    }
 `
 
 const Image = styled.div`
@@ -92,11 +88,19 @@ const Info = styled.div`
         @media screen and (max-width: 500px) {
             font-size: 40px;
         }
+
+        @media screen and (max-width: 420px) {
+            font-size: 35px;
+        }
     }
 
     p {
         color: #8D8D8D;
         font-size: 20px;
+
+        @media screen and (max-width: 450px) {
+            font-size: 18px;
+        }
     }
 
     @media screen and (max-width: 1165px) {
