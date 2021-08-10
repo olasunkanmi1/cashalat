@@ -49,7 +49,6 @@ const SidebarMenuLink = styled.div`
     font-weight: 500;
     letter-spacing: 5px;
     text-decoration: none;
-    margin-bottom: 50px;
     width: 100%;
     transition: .3s;
     position: relative;
@@ -57,9 +56,11 @@ const SidebarMenuLink = styled.div`
 
     &:nth-child(1) {
         height: 130px;
+        margin-bottom: 40px;
     }
     &:nth-child(2) {
         height: 100px;
+        margin-bottom: 40px;
     }
 
     &:last-child {
