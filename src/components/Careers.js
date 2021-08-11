@@ -13,15 +13,16 @@ const Container = styled.section`
     }
 
     @media screen and (max-width: 920px) {
-        padding: 4rem 4.5rem 0 4.5rem;
+        padding: 4rem 0 4rem 4.5rem;
     }
 
     @media screen and (max-width: 850px) {
-        padding: 4rem 4rem 0 4rem;
+        padding: 4rem 0 4rem 4rem;
     }
 
     @media screen and (max-width: 768px) {
-        padding: 4rem 3rem 0 3rem;
+        padding: 4rem 3rem;
+        flex-direction: column;
     }
 
     @media screen and (max-width: 450px) {
@@ -36,7 +37,7 @@ const Info = styled.div`
 
     h1 {
         font-size: 60px;
-        #0847A8
+        color: #0847A8;
         margin-bottom: 2rem;
     }
 

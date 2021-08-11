@@ -22,6 +22,7 @@ const Container = styled.section`
 
     @media screen and (max-width: 768px) {
         padding: 2rem 3rem;
+        flex-direction: column;
     }
 
     @media screen and (max-width: 450px) {
@@ -36,7 +37,7 @@ const Image = styled.div`
 
     h1 {
         font-size: 60px;
-        #0847A8
+        color: #0847A8;
         margin-bottom: 2rem;
     }
 
