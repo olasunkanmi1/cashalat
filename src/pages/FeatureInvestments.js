@@ -1,16 +1,16 @@
 import React from 'react'
 import styled from 'styled-components'
 
-//styles
-const Container = styled.section`
-
-`
+//components
+import MoreMoney from '../components/MoreMoney'
+import OnTheGo from '../components/OnTheGo'
 
 const FeatureInvestments = () => {
     return (
-        <Container>
-            
-        </Container>
+        <>
+            <MoreMoney />
+            <OnTheGo />
+        </>
     )
 }
 
