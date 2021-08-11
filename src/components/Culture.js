@@ -48,7 +48,6 @@ const Image = styled.div`
     img {
         width: 200px;
         height: 400px;
-        object-fit: cover;
     }
 `
 
