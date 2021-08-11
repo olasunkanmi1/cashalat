@@ -35,6 +35,10 @@ const Image = styled.div`
     flex-direction: column;
     width: 30%;
 
+    @media screen and (max-width: 768px) {
+        width: 100%;
+    }
+
     h1 {
         font-size: 60px;
         color: #0847A8;
