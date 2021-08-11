@@ -32,20 +32,102 @@ const Container = styled.section`
 
     h1 {
         font-size: 70px;
-        color: #0847A8;
+        color: #FF620F;
         text-align: center;
-        width: 60%;
+        width: 40%;
+
+        @media screen and (max-width: 1770px) {
+            width: 50%;
+        }
+        @media screen and (max-width: 1460px) {
+            width: 60%;
+        }
+        @media screen and (max-width: 1250px) {
+            width: 70%;
+        }
+        @media screen and (max-width: 1100px) {
+            width: 80%;
+        }
+        @media screen and (max-width: 1050px) {
+            font-size: 60px;
+        }
+        @media screen and (max-width: 810px) {
+            width: 90%;
+        }
+        @media screen and (max-width: 768px) {
+            font-size: 50px;
+            width: 80%;
+        }
+        @media screen and (max-width: 660px) {
+            width: 90%;
+        }
+        @media screen and (max-width: 620px) {
+            font-size: 40px;
+        }
+        @media screen and (max-width: 500px) {
+            width: 100%;
+        }
     }
     
     h2 {
         font-size: 70px;
         color: #0847A8;
         text-align: center;
-        width: 60%;
+
+        @media screen and (max-width: 1050px) {
+            font-size: 60px;
+        }
+        @media screen and (max-width: 768px) {
+            font-size: 50px;
+        }
+        @media screen and (max-width: 620px) {
+            font-size: 40px;
+        }
     }
 
     img {
-        padding: 4rem 0;
+        padding: 6rem 0;
+        width: 50%;
+
+        @media screen and (max-width: 1630px) {
+            width: 60%;
+        }
+        @media screen and (max-width: 1300px) {
+            width: 70%;
+        }
+        @media screen and (max-width: 1200px) {
+            width: 80%;
+        }
+        @media screen and (max-width: 870px) {
+            width: 90%;
+            padding: 4rem 0;
+        }
+        @media screen and (max-width: 660px) {
+            width: 100%;
+            padding: 3rem 0;
+        }
+        @media screen and (max-width: 380px) {
+            padding: 2rem 0;
+        }
+    }
+
+    p {
+        width: 50%;
+        font-size: 20px;
+        text-align: center;
+
+        @media screen and (max-width: 1790px) {
+            width: 60%;
+        }
+        @media screen and (max-width: 1520px) {
+            width: 70%;
+        }
+        @media screen and (max-width: 1330px) {
+            width: 80%;
+        }
+        @media screen and (max-width: 1190px) {
+            width: 100%;
+        }
     }
 `
 
@@ -57,9 +139,9 @@ const FeatureLoans = () => {
     return (
         <Container>
             <h1>get instant funds when you need it.</h1>
-            <h2></h2>
+            <h2>with zero collateral.</h2>
             <img src={image} alt="loan" />
-            <p></p>
+            <p>Going out for shopping and you are cash trapped, there is no need to liquidate your savings or investment. Cashalat offers you instant, simple and flexible overdraft loans on your account which can be paid back seamlessly, while your savings or investments provide cashback for the facility.</p>
         </Container>
     )
 }

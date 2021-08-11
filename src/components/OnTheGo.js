@@ -29,23 +29,17 @@ const Container = styled.section`
     }
 
     @media screen and (max-width: 768px) {
-        padding: 4rem 3rem;
+        padding: 2rem 3rem 4rem 3rem;
         grid-template-columns: 1fr;
-        grid-template-rows: 180px;
+        grid-template-rows: 150px;
         grid-gap: 20px;
     }
 
     @media screen and (max-width: 450px) {
-        padding: 4rem 1.5rem;
+        padding: 2rem 1.5rem 4rem 1.5rem;
     }
-    @media screen and (max-width: 410px) {
+    @media screen and (max-width: 385px) {
         grid-template-rows: 230px;
-    }
-    @media screen and (max-width: 360px) {
-        grid-template-rows: 250px;
-    }
-    @media screen and (max-width: 335px) {
-        grid-template-rows: 270px;
     }
 `
 
@@ -94,6 +88,10 @@ const Info = styled.div`
         p {
             font-size: 20px;
             width: 75%;
+
+            @media screen and (max-width: 768px) {
+                width: 100%;
+            }
         }
 `
 

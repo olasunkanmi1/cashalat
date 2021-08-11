@@ -1,16 +1,18 @@
-import React from 'react'
-import styled from 'styled-components'
+import React, { useEffect } from 'react'
 
-//styles
-const Container = styled.section`
-
-`
+//components
+import Bills from '../components/Bills'
 
 const FeaturePayments = () => {
+
+    useEffect(() => {
+        window.scrollTo(0,0)
+    }, [])
+
     return (
-        <Container>
-            
-        </Container>
+        <>
+            <Bills />
+        </>
     )
 }
 

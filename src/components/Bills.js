@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import image from '../images/inv1.png'
+import image from '../images/payment1.png'
 
 //styles
 const Container = styled.section`
@@ -144,8 +144,8 @@ const MoreMoney = () => {
     return (
         <Container>
             <Info>
-                <h2>investments beget more money in your account.</h2>
-                <p>With the least naira amount, a meagre cash Investment, gives you mouth watery returns.</p>
+                <h2>pay your bills conveniently and fast</h2>
+                <p>With Cashalat, you get to pay your utilities.</p>
             </Info>
             <Image>
                 <img src={image} alt="img" />

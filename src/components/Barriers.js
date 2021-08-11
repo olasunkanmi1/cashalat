@@ -66,7 +66,7 @@ const Container = styled.div`
         @media screen and (max-width: 750px) {
             font-size: 50px;
         }
-        @media screen and (max-width: 350px) {
+        @media screen and (max-width: 450px) {
             font-size: 40px;
         }
     }
