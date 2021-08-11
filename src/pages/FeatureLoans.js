@@ -32,7 +32,7 @@ const Container = styled.section`
 
     h1 {
         font-size: 70px;
-        color: #FF620F;
+        color: #0847A8;
         text-align: center;
         width: 40%;
 
@@ -71,7 +71,7 @@ const Container = styled.section`
     
     h2 {
         font-size: 70px;
-        color: #0847A8;
+        color: #FF620F;
         text-align: center;
 
         @media screen and (max-width: 1050px) {

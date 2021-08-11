@@ -1,16 +1,21 @@
-import React from 'react'
-import styled from 'styled-components'
+import React, { useEffect } from 'react'
 
-//styles
-const Container = styled.section`
+//components
+import Careers from '../components/Careers'
+import Culture from '../components/Culture'
 
-`
 
 const CompanyCulture = () => {
+
+    useEffect(() => {
+        window.scrollTo(0,0)
+    }, [])
+
     return (
-        <Container>
-            
-        </Container>
+        <>
+            <Careers />
+            <Culture />
+        </>
     )
 }
 

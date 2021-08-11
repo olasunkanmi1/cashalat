@@ -6,7 +6,7 @@ import image from '../images/payment1.png'
 const Container = styled.section`
     display: grid;
     grid-template-columns: .40fr .60fr;
-    grid-template-rows: 600px;
+    grid-template-rows: 700px;
     grid-gap: 50px;
     margin-top: 75px;
     padding: 4rem 0 2rem 6rem;
@@ -15,6 +15,9 @@ const Container = styled.section`
         grid-gap: 20px;
     }
     @media screen and (max-width: 1300px) {
+        grid-template-rows: 600px;
+    }
+    @media screen and (max-width: 1105px) {
         grid-template-rows: 500px;
     }
     @media screen and (max-width: 1000px) {
@@ -23,6 +26,10 @@ const Container = styled.section`
 
     @media screen and (max-width: 920px) {
         padding: 4rem 0rem 4rem 4.5rem;
+        grid-template-columns: .30fr .70fr;
+    }
+    @media screen and (max-width: 930px) {
+        grid-template-rows: 400px;
     }
 
     @media screen and (max-width: 850px) {
@@ -32,28 +39,32 @@ const Container = styled.section`
     @media screen and (max-width: 768px) {
         padding: 4rem 3rem;
         grid-template-columns: 1fr;
-        grid-template-rows: 200px 400px;
+        grid-template-rows: 150px 400px;
     }
-    
-    @media screen and (max-width: 725px) {
-        grid-template-rows: 250px 400px;
+    @media screen and (max-width: 660px) {
+        grid-template-rows: 180px 400px;
     }
-
     @media screen and (max-width: 580px) {
-        grid-template-rows: 230px 400px;
+        grid-template-rows: 150px 400px;
     }
-    @media screen and (max-width: 490px) {
-        grid-template-rows: 260px 400px;
+    @media screen and (max-width: 550px) {
+        grid-template-rows: 170px 400px;
+    }
+    @media screen and (max-width: 540px) {
+        grid-template-rows: 190px 400px;
+    }
+    @media screen and (max-width: 455px) {
+        grid-template-rows: 220px 400px;
     }
     @media screen and (max-width: 450px) {
         padding: 4rem 1.5rem;
     }
     
     @media screen and (max-width: 440px) {
-        grid-template-rows: 260px 400px;
+        grid-template-rows: 220px 400px;
     }
-    @media screen and (max-width: 340px) {
-        grid-template-rows: 350px 400px;
+    @media screen and (max-width: 380px) {
+        grid-template-rows: 220px 300px;
     }
 `
 
@@ -61,29 +72,24 @@ const Info = styled.div`
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        padding: 8rem 0;
-
-        @media screen and (max-width: 1690px) {
-            padding: 10rem 0;
-        }
-        
-        @media screen and (max-width: 1450px) {
-            padding: 8rem 0;
-        }
+        padding: 13rem 0;
 
         @media screen and (max-width: 1300px) {
-            padding: 4rem 0;
+            padding: 11rem 0;
         }
         
-        @media screen and (max-width: 1180px) {
-            padding: 2rem 0;
+        @media screen and (max-width: 1150px) {
+            padding: 9rem 0;
         }
 
-        @media screen and (max-width: 1050px) {
-            padding: 1rem 0;
+        @media screen and (max-width: 1105px) {
+            padding: 4rem 0;
+        }
+        @media screen and (max-width: 930px) {
+            padding: 2rem 0;
         }
         @media screen and (max-width: 768px) {
-            padding: 0;
+            padding: 0 0;
         }
 
         h2 {
@@ -94,7 +100,7 @@ const Info = styled.div`
                 font-size: 60px;
             }
 
-            @media screen and (max-width: 768px) {
+            @media screen and (max-width: 860px) {
                 font-size: 50px;
             }
             
@@ -114,33 +120,52 @@ const Info = styled.div`
 `
 
 const Image = styled.div`
-    @media screen and (max-width: 570px) {
+    @media screen and (max-width: 768px) {
         border-radius: 40px;
         overflow: hidden;
     }
     img {
-        width: 100%;
+        width: 120%;
         height: 100%;
-        object-fit: cover;
-        border-radius:  40px 0 0 40px;
+        border-radius:  40px;
 
-        @media screen and (max-width: 1050px) {
-            width: 230%;
+        @media screen and (max-width: 1250px) {
+            width: 120%;
         }
-        @media screen and (max-width: 900px) {
-            width: 250%;
+        @media screen and (max-width: 1155px) {
+            width: 130%;
+        }
+        @media screen and (max-width: 1107px) {
+            width: 130%;
+        }
+        @media screen and (max-width: 1104px) {
+            width: 190%;
+        }
+        @media screen and (max-width: 1040px) {
+            width: 210%;
+        }
+        @media screen and (max-width: 970px) {
+            width: 220%;
+        }
+        @media screen and (max-width: 930px) {
+            width: 190%;
         }
         @media screen and (max-width: 768px) {
-            width: 100%;
-            border-radius: 40px;
+            width: 120%;
         }
-        @media screen and (max-width: 570px) {
-            width: 150%;
+        @media screen and (max-width: 450px) {
+            width: 130%;
+        }
+        @media screen and (max-width: 430px) {
+            width: 140%;
+        }
+        @media screen and (max-width: 400px) {
+            width: 130%;
         }
     }
 `
 
-const MoreMoney = () => {
+const Bills = () => {
     return (
         <Container>
             <Info>
@@ -154,4 +179,4 @@ const MoreMoney = () => {
     )
 }
 
-export default MoreMoney
+export default Bills

@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 
 //components
 import Bills from '../components/Bills'
+import Topup from '../components/Topup'
 
 const FeaturePayments = () => {
 
@@ -12,6 +13,7 @@ const FeaturePayments = () => {
     return (
         <>
             <Bills />
+            <Topup />
         </>
     )
 }
