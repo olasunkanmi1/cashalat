@@ -9,15 +9,15 @@ import arr from '../images/arr.svg'
 const Container = styled.section`
     display: grid;
     grid-template-columns: .25fr .50fr .25fr;
-    padding: 2rem 6rem;
+    padding: 5em 6rem;
     width: 100vw;
 
     @media screen and (max-width: 1000px) {
-        padding: 2rem 5rem;
+        padding: 3rem 5rem;
     }
 
     @media screen and (max-width: 920px) {
-        padding: 2rem 4.5rem;
+        padding: 2rem 4.5rem 3rem 4.5rem;
     }
 
     @media screen and (max-width: 850px) {
