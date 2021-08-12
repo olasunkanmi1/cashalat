@@ -280,7 +280,7 @@ const Image2 = styled.div`
         position: initial
     }
     @media screen and (max-width: 600px) {
-        margin-top: 2rem;
+        margin: 2rem 0 1rem 0;
     }
 
     img {
