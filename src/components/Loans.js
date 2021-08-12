@@ -24,27 +24,14 @@ const Container = styled.section`
     @media screen and (max-width: 768px) {
         padding: 2rem 3rem;
         grid-template-columns: 1fr;
-        grid-template-rows: 230px auto;
+        grid-template-rows: auto 400px;
+    }
+    @media screen and (max-width: 500px) {
+        grid-template-rows: auto 300px;
     }
 
     @media screen and (max-width: 450px) {
         padding: 2rem 1.5rem;
-    }
-
-    @media screen and (max-width: 640px) {
-        grid-template-rows: 260px auto;
-    }
-    
-    @media screen and (max-width: 500px) {
-        grid-template-rows: 230px auto;
-    }
-
-    @media screen and (max-width: 400px) {
-        grid-template-rows: 250px auto;
-    }
-    
-    @media screen and (max-width: 330px) {
-        grid-template-rows: 270px auto;
     }
 `
 
@@ -70,9 +57,8 @@ const Image = styled.div`
 
 const Info = styled.div`
     display: flex;
-    justify-content: space-between;
     flex-direction: column;
-    padding: 8rem 0;
+    padding: 12rem 0;
 
     div {
         display: flex;
@@ -85,6 +71,7 @@ const Info = styled.div`
         color: #fff;
         border-radius: 10px;
         width: 200px;
+        margin-bottom: 10px;
 
         @media screen and (max-width: 500px) {
             font-size: 15px;
@@ -96,6 +83,7 @@ const Info = styled.div`
         font-size: 50px;
         font-weight: 700;
         color: #0847A8;
+        margin-bottom: 20px;
 
         @media screen and (max-width: 500px) {
             font-size: 40px;
@@ -115,19 +103,22 @@ const Info = styled.div`
         }
     }
 
-    @media screen and (max-width: 1220px) {
-        padding: 6rem 0;
+    @media screen and (max-width: 1600px) {
+        padding: 10rem 0;
     }
     
-    @media screen and (max-width: 880px) {
-        padding: 4rem 0;
+    @media screen and (max-width: 1300px) {
+        padding: 7rem 0;
     }
     
-    @media screen and (max-width: 780px) {
+    @media screen and (max-width: 1200px) {
+        padding: 5rem 0;
+    }
+    
+    @media screen and (max-width: 960px) {
         padding: 2rem 0;
     }
-    
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 900px) {
         padding: 0;
     }
 `

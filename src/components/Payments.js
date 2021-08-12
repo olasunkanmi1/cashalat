@@ -27,9 +27,11 @@ const Container = styled.section`
         grid-template-rows: auto 400px;
     }
 
+    @media screen and (max-width: 400px) {
+        grid-template-rows: auto 350px;
+    }
     @media screen and (max-width: 450px) {
         padding: 2rem 1.5rem;
-    } grid-template-rows: 280px auto;
     }
 `
 
@@ -94,7 +96,7 @@ const Info = styled.div`
         padding: 6rem 0;
     }
     
-    @media screen and (max-width: 810px) {
+    @media screen and (max-width: 940px) {
         padding: 4rem 0;
     }
     

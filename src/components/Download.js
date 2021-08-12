@@ -1,5 +1,5 @@
 import React from 'react'
-import styled from 'styled-components/macro'
+import styled, {css} from 'styled-components/macro'
 import Newsletter from './Newsletter'
 import playstore from '../images/playstore.png'
 import applestore from '../images/applestore.png'

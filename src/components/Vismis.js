@@ -7,7 +7,6 @@ import image2 from '../images/cp2.png'
 const Container =  styled.section`
     display: flex;
     flex-direction: column;
-    align-items: center;
     margin-top: 75px;
     padding: 4rem 6rem;
 
@@ -30,6 +29,11 @@ const Container =  styled.section`
     @media screen and (max-width: 450px) {
         padding: 2rem 1.5rem 0 1.5rem;
     }
+`
+
+const Head = styled.div`
+    display: flex;
+    justify-content: center;
 
     h2 {
         font-size: 40px;
@@ -58,20 +62,32 @@ const Container =  styled.section`
         @media screen and (max-width: 730px) {
             font-size: 35px;
         }
+    }
 `
 
 const Vis = styled.div`
-    display: flex;
-    justify-content: space-between;
-    height: 400px;
+    display: grid;
+    grid-template-columns: .8fr .2fr;
+    grid-template-rows: 600px;
 
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 1400px) {
+        grid-template-rows: 500px;
+    }
+    @media screen and (max-width: 1150px) {
+        grid-template-rows: 400px;
+    }
+    @media screen and (max-width: 1100px) {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    @media screen and (max-width: 768px) {
         flex-direction: column;
     }
 `
 
 const Image1 = styled.div`
-    width: 70%;
+    grid-column: 1 / 2;
 
     img {
         width: 100%;
@@ -80,39 +96,42 @@ const Image1 = styled.div`
         object-fit: cover;
     }
 
+    @media screen and (max-width: 1100px) {
+        height: 400px;
+    }
+
+    @media screen and (max-width: 768px) {
+        margin-bottom: 2rem;
+    }
+
     @media screen and (max-width: 600px) {
-        width: 100%;
         height: 300px;
     }
 `
 
 const Info1 = styled.div`
     display: flex;
-    justify-content: space-between;
     flex-direction: column;
     align-items: flex-end;
-    padding: 10rem 6rem 10rem 0;
+    grid-column: 2 / 3;
+    padding: 10rem 2rem;
 
-    @media screen and (max-width: 1300px) {
-        padding: 10rem 4rem 10rem 2rem;
+    @media screen and (max-width: 1670px) {
+        padding: 10rem 1rem;
     }
     
-    @media screen and (max-width: 1200px) {
-        padding: 10rem 2rem 10rem 2rem;
+    @media screen and (max-width: 1150px) {
+        padding: 3rem 1rem;
     }
     
     @media screen and (max-width: 1100px) {
-        padding: 10rem 0 10rem 2rem;
-    }
-    
-    @media screen and (max-width: 980px) {
-        padding: 9rem 0 10rem 2rem;
+        padding: 8rem 1rem;
     }
 
-    @media screen and (max-width: 600px) {
+    
+    @media screen and (max-width: 768px) {
+        padding: 0;
         align-items: flex-start;
-        padding: 1rem 0;
-        height: 100px;
     }
 
     div {
@@ -126,6 +145,7 @@ const Info1 = styled.div`
         color: #fff;
         border-radius: 10px;
         width: 150px;
+        margin-bottom: 15px;
 
         @media screen and (max-width: 500px) {
             font-size: 18px;
@@ -147,8 +167,12 @@ const Mis = styled.div`
     display: flex;
     justify-content: space-between;
     height: 200px;
+    margin-bottom: 5rem;
     position: relative;
 
+    @media screen and (max-width: 768px) {
+        height: 400px;
+    }
     @media screen and (max-width: 700px) {
         height: 250px;
     }
@@ -169,10 +193,9 @@ const Mis = styled.div`
 
 const Info2 = styled.div`
     display: flex;
-    justify-content: space-between;
     flex-direction: column;
     align-items: flex-start;
-    padding: 2rem 0rem 2rem 5rem;
+    padding: 5rem 0rem 0 20rem;
     width: 50%;
 
     div {
@@ -186,6 +209,7 @@ const Info2 = styled.div`
         color: #fff;
         border-radius: 10px;
         width: 150px;
+        margin-bottom: 15px;
 
         @media screen and (max-width: 500px) {
             font-size: 18px;
@@ -202,33 +226,68 @@ const Info2 = styled.div`
         }
     }
 
-    @media screen and (max-width: 800px) {
-        padding: 2rem 0rem 2rem 2rem;
+    @media screen and (max-width: 1700px) {
+        padding: 5rem 0rem 0 15rem;
     }
-    
-    @media screen and (max-width: 700px) {
-        padding: 3rem 0;
+    @media screen and (max-width: 1600px) {
+        padding: 5rem 0rem 0 10rem;
+    }
+    @media screen and (max-width: 1360px) {
+        padding: 3rem 0rem 0 7rem;
+    }
+    @media screen and (max-width: 1150px) {
+        padding: 1rem 0rem 0 5rem;
+    }
+    @media screen and (max-width: 960px) {
+        padding: 1rem 0rem 0 2rem;
+        width: 40%;
+    }
+
+    @media screen and (max-width: 768px) {
+        padding: 8rem 0;
+    }
+    @media screen and (max-width: 695px) {
+        padding: 5rem 0;
     }
 
     @media screen and (max-width: 600px) {
-        padding: 1rem 0 0 0;
-        width: 100%;
         order: 2;
-        height: 150px;
+        padding: 0;
+        width: 100%;
     }
 `
 
 const Image2 = styled.div`
-    width: 45%;
+    width: 600px;
+    height: 600px;
     position: absolute;
-    top: -100px;
+    top: -200px;
     right: 0;
+
+    @media screen and (max-width: 1400px) {
+        width: 500px;
+        height: 500px;
+    }
+    @media screen and (max-width: 1150px) {
+        width: 400px;
+        height: 400px;
+    }
+    @media screen and (max-width: 1100px) {
+        top: -100px;
+    }
+
+    @media screen and (max-width: 768px) {
+        position: initial
+    }
+    @media screen and (max-width: 600px) {
+        margin-top: 2rem;
+    }
 
     img {
         width: 100%;
         height: 100%;
         border-radius: 30px;
-        object-fit: cover;
+        object-fit: contain;
     }
 
     @media screen and (max-width: 700px) {
@@ -245,9 +304,11 @@ const Image2 = styled.div`
 const Vismis = () => {
     return (
         <Container>
+            <Head>
             <h2>
                 we are breaking boundaries to financial services for the underserved and middle class
             </h2>
+            </Head>
             <Vis>
                 <Image1>
                     <img src={image} alt="image" />

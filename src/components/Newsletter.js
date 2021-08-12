@@ -50,7 +50,7 @@ const Input = styled.div`
         cursor: pointer;
         font-size: 15px;
 
-        @media screen and (max-width: 500px) {
+        @media screen and (max-width: 1000px) {
             width: 40%;
         }
 

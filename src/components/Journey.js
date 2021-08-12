@@ -9,9 +9,12 @@ import arr from '../images/arr.svg'
 const Container = styled.section`
     display: grid;
     grid-template-columns: .25fr .50fr .25fr;
-    padding: 5em 6rem;
+    padding: 3rem 6rem 5rem 6rem;
     width: 100vw;
 
+    @media screen and (max-width: 1400px) {
+        padding: 0 6rem 3rem 5rem;
+    }
     @media screen and (max-width: 1000px) {
         padding: 3rem 5rem;
     }
@@ -27,10 +30,16 @@ const Container = styled.section`
     @media screen and (max-width: 768px) {
         padding: 2rem 3rem;
     }
+    @media screen and (max-width: 705px) {
+        padding: 4rem 3rem;
+    }
 
     @media screen and (max-width: 690px) {
         grid-template-columns: .40fr .60fr;
         grid-template-rows: auto 300px;
+    }
+    @media screen and (max-width: 600px) {
+        padding: 0 3rem 4rem 3rem;
     }
     @media screen and (max-width: 580px) {
         grid-template-columns: 1fr 1fr;
@@ -80,10 +89,7 @@ const Container = styled.section`
         @media screen and (max-width: 580px) {
             grid-column: 1 / 3;
             grid-row: 1 / 2;
-        }
-
-        @media screen and (max-width: 550px) {
-            padding: 3rem 0 0 0;
+            padding: 0;
         }
     }
 `

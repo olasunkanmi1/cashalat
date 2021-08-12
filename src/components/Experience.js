@@ -60,20 +60,14 @@ const Info = styled.div`
         color: #0847A8;
         margin-bottom: 20px;
 
-        @media screen and (max-width: 1160px) {
+        @media screen and (max-width: 1000px) {
             font-size: 60px;
         }
-        
-        @media screen and (max-width: 840px) {
-            font-size: 55px;
+        @media screen and (max-width: 500px) {
+            font-size: 50px;
         }
-        
-        @media screen and (max-width: 610px) {
-            font-size: 45px;
-        }
-
         @media screen and (max-width: 420px) {
-            font-size: 40px;
+            font-size: 45px;
         }
     }
 
@@ -106,7 +100,8 @@ const Download = styled .div`
 `
 
 const Image = styled.div`
-    overflow: hidden;
+    display: flex;
+    align-items: center;
     height: 450px;
 
     img {
@@ -114,19 +109,7 @@ const Image = styled.div`
         height: 100%;
         object-fit: contain;
     }
-
-    @media screen and (max-width: 1695px) {
-        height: 500px;
-    }
-    @media screen and (max-width: 1325px) {
-        height: 600px;
-    }
-    @media screen and (max-width: 1220px) {
-        height: 650px;
-    }
-    @media screen and (max-width: 945px) {
-        height: 700px;
-    }
+    
     @media screen and (max-width: 768px) {
         height: 400px;
     }
