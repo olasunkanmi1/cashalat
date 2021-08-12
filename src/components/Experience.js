@@ -81,12 +81,12 @@ const Wrapper = styled.div`
 const Info = styled.div`
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 
     h1 {
         font-size: 70px;
         font-weight: 700;
         color: #0847A8;
+        margin-bottom: 20px;
 
         @media screen and (max-width: 1160px) {
             font-size: 60px;
@@ -107,6 +107,7 @@ const Info = styled.div`
 
     p {
         font-size: 20px;
+        margin-bottom: 20px;
 
         @media screen and (max-width: 450px) {
             font-size: 18px;
@@ -116,6 +117,7 @@ const Info = styled.div`
 
 const Download = styled .div`  
     display: flex;
+    margin-bottom: 20px;
 
     img {
         height: 40px;
@@ -136,7 +138,7 @@ const Image = styled.div`
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    height: 500px;
+    height: 450px;
 
     img {
         width: 100%;
@@ -144,6 +146,18 @@ const Image = styled.div`
         object-fit: contain;
     }
 
+    @media screen and (max-width: 1695px) {
+        height: 500px;
+    }
+    @media screen and (max-width: 1325px) {
+        height: 600px;
+    }
+    @media screen and (max-width: 1220px) {
+        height: 650px;
+    }
+    @media screen and (max-width: 945px) {
+        height: 700px;
+    }
     @media screen and (max-width: 500px) {
         height: 350px;
     }

@@ -5,36 +5,53 @@ import image from '../images/culture2.png'
 //styles
 const Container = styled.section`
     display: flex;
-    padding: 2rem 6rem;
+    justify-content: space-between;
+    padding: 4rem 6rem;
     background: #E5F9FF;
 
     @media screen and (max-width: 1000px) {
-        padding: 2rem 5rem;
-    }
-
-    @media screen and (max-width: 920px) {
-        padding: 2rem 4.5rem;
-    }
-
-    @media screen and (max-width: 850px) {
-        padding: 2rem 4rem;
-    }
-
-    @media screen and (max-width: 768px) {
-        padding: 2rem 3rem;
+        padding: 4rem 5rem;
         flex-direction: column;
     }
 
+    @media screen and (max-width: 920px) {
+        padding: 4rem 4.5rem;
+    }
+
+    @media screen and (max-width: 850px) {
+        padding: 4rem 4rem;
+    }
+
+    @media screen and (max-width: 768px) {
+        padding: 4rem 3rem;
+    }
+
     @media screen and (max-width: 450px) {
-        padding: 2rem 1.5rem;
+        padding: 4rem 1.5rem;
     }
 `
 
 const Image = styled.div`
     display: flex;
     flex-direction: column;
-    width: 30%;
+    justify-content: flex-end;
+    width: 20%;
 
+    @media screen and (max-width: 1725px) {
+        width: 30%;
+    }
+    @media screen and (max-width: 1215px) {
+        width: 40%;
+        padding-bottom: 5rem;
+    }
+    @media screen and (max-width: 1015px) {
+        padding-bottom: 10rem;
+    }
+    @media screen and (max-width: 1000px) {
+        padding-bottom: 2rem;
+        width: 100%;
+        align-items: center;
+    }
     @media screen and (max-width: 768px) {
         width: 100%;
     }
@@ -43,17 +60,36 @@ const Image = styled.div`
         font-size: 60px;
         color: #0847A8;
         margin-bottom: 2rem;
+        width: 100%;
+
+        @media screen and (max-width: 768px) {
+            font-size: 50px;
+        }
+        @media screen and (max-width: 500px) {
+            font-size: 40px;
+        }
     }
 
     img {
-        width: 200px;
-        height: 400px;
+        width: 350px;
+        height: 300px;
+
+        @media screen and (max-width: 380px) {
+            width: 280px;
+            height: 250px;
+        }
     }
 `
 
 const Info = styled.div`
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+
+    @media screen and (max-width: 1000px) {
+        width: 100%;
+    }
 
     p {
         font-size: 20px;
