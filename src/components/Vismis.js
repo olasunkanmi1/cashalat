@@ -173,21 +173,10 @@ const Mis = styled.div`
     @media screen and (max-width: 768px) {
         height: 400px;
     }
-    @media screen and (max-width: 700px) {
-        height: 250px;
-    }
     
     @media screen and (max-width: 600px) {
         flex-direction: column;
-        height: 420px;
-    }
-    
-    @media screen and (max-width: 450px) {
-        height: 430px;
-    }
-    
-    @media screen and (max-width: 370px) {
-        height: 450px;
+        height: auto;
     }
 `
 
@@ -278,9 +267,6 @@ const Image2 = styled.div`
 
     @media screen and (max-width: 768px) {
         position: initial
-    }
-    @media screen and (max-width: 600px) {
-        margin: 2rem 0 1rem 0;
     }
 
     img {
