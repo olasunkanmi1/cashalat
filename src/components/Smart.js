@@ -23,26 +23,11 @@ const Container = styled.section`
     @media screen and (max-width: 768px) {
         padding: 2rem 3rem 1rem 3rem;
         grid-template-columns: 1fr;
-        grid-template-rows: 200px auto;
-    }
-
-    @media screen and (max-width: 700px) {
-        grid-template-rows: 250px auto;
+        grid-template-rows: auto auto;
     }
 
     @media screen and (max-width: 450px) {
         padding: 2rem 1.5rem 1rem 1.5rem;
-    }
-    
-    @media screen and (max-width: 400px) {
-        grid-template-rows: 280px auto;
-    }
-    
-    @media screen and (max-width: 330px) {
-        grid-template-rows: 300px auto;
-    }
-    @media screen and (max-width: 300px) {
-        grid-template-rows: 320px auto;
     }
 `
 
@@ -70,7 +55,6 @@ const Image = styled.div`
 
 const Info = styled.div`
     display: flex;
-    justify-content: space-between;
     flex-direction: column;
     padding: 5rem 0;
 
@@ -85,6 +69,7 @@ const Info = styled.div`
         color: #fff;
         border-radius: 10px;
         width: 200px;
+        margin-bottom: 10px;
 
         @media screen and (max-width: 500px) {
             font-size: 15px;
@@ -96,6 +81,7 @@ const Info = styled.div`
         font-size: 50px;
         font-weight: 700;
         color: #0847A8;
+        margin-bottom: 20px;
 
         @media screen and (max-width: 500px) {
             font-size: 40px;
@@ -115,16 +101,15 @@ const Info = styled.div`
         }
     }
 
-    @media screen and (max-width: 900px) {
+    @media screen and (max-width: 1000px) {
         padding: 4rem 0;
     }
     
-    @media screen and (max-width: 825px) {
+    @media screen and (max-width: 950px) {
         padding: 2rem 0;
     }
-
-    @media screen and (max-width: 768px) {
-        padding: 0;
+    @media screen and (max-width: 940px) {
+        padding: 0rem 0;
     }
 `
 

@@ -24,38 +24,18 @@ const Container = styled.section`
     @media screen and (max-width: 768px) {
         padding: 2rem 3rem;
         grid-template-columns: 1fr;
-        grid-template-rows: 280px auto;
-    }
-
-    @media screen and (max-width: 700px) {
-        grid-template-rows: 330px auto;
+        grid-template-rows: auto 400px;
     }
 
     @media screen and (max-width: 450px) {
         padding: 2rem 1.5rem;
-    }
-
-    @media screen and (max-width: 535px) {
-        grid-template-rows: 380px auto;
-    }
-    
-    @media screen and (max-width: 500px) {
-        grid-template-rows: 320px auto;
-    }
-
-    @media screen and (max-width: 345px) {
-        grid-template-rows: 350px auto;
-    }
-
-    @media screen and (max-width: 320px) {
-        grid-template-rows: 370px auto;
+        grid-template-rows: auto 300px;
     }
 `
 
 const Image = styled.div`
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    align-iems: center;
     
     img {
         width: 100%;
@@ -70,9 +50,8 @@ const Image = styled.div`
 
 const Info = styled.div`
     display: flex;
-    justify-content: space-between;
     flex-direction: column;
-    padding: 5rem 0;
+    padding: 8rem 0;
 
     div {
         display: flex;
@@ -85,6 +64,7 @@ const Info = styled.div`
         color: #fff;
         border-radius: 10px;
         width: 270px;
+        margin-bottom: 10px;
 
         @media screen and (max-width: 500px) {
             font-size: 15px;
@@ -96,6 +76,7 @@ const Info = styled.div`
         font-size: 50px;
         font-weight: 700;
         color: #0847A8;
+        margin-bottom: 20px;
 
         @media screen and (max-width: 500px) {
             font-size: 40px;
@@ -115,19 +96,15 @@ const Info = styled.div`
         }
     }
 
-    @media screen and (max-width: 1315px) {
+    @media screen and (max-width: 1410px) {
+        padding: 5rem 0;
+    }
+    
+    @media screen and (max-width: 1150px) {
         padding: 3rem 0;
     }
     
-    @media screen and (max-width: 1000px) {
-        padding: 2rem 0;
-    }
-    
     @media screen and (max-width: 900px) {
-        padding: 1rem 0;
-    }
-    
-    @media screen and (max-width: 820px) {
         padding: 0;
     }
 `

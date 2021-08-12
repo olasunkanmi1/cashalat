@@ -24,41 +24,26 @@ const Container = styled.section`
     @media screen and (max-width: 768px) {
         padding: 2rem 3rem;
         grid-template-columns: 1fr;
-        grid-template-rows: 250px auto;
-    }
-
-    @media screen and (max-width: 580px) {
-        grid-template-rows: 300px auto;
+        grid-template-rows: auto 400px;
     }
 
     @media screen and (max-width: 450px) {
         padding: 2rem 1.5rem;
-    }
-
-    @media screen and (max-width: 500px) {
-        grid-template-rows: 250px auto;
-    }
-    
-    @media screen and (max-width: 400px) {
-        grid-template-rows: 280px auto;
+    } grid-template-rows: 280px auto;
     }
 `
 
 const Image = styled.div`
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     
     img {
         width: 100%;
-        width: 100%;
-        object-fit: cover;
+        height: 100%;
+        object-fit: contain;
     }
 `
 
 const Info = styled.div`
     display: flex;
-    justify-content: space-between;
     flex-direction: column;
     padding: 8rem 0;
 
@@ -73,6 +58,7 @@ const Info = styled.div`
         color: #fff;
         border-radius: 10px;
         width: 250px;
+        margin-bottom: 10px;
 
         @media screen and (max-width: 500px) {
             font-size: 15px;
@@ -84,6 +70,7 @@ const Info = styled.div`
         font-size: 50px;
         font-weight: 700;
         color: #0847A8;
+        margin-bottom: 20px;
 
         @media screen and (max-width: 500px) {
             font-size: 40px;

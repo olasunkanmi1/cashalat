@@ -41,40 +41,12 @@ const Wrapper = styled.div`
         
 
         @media screen and (max-width: 960px) {
-            grid-template-rows: 550px;
             grid-gap: 30px;
         }
-        @media screen and (max-width: 960px) {
-            grid-template-rows: 600px;
-            grid-gap: 30px;
-        }
-
         @media screen and (max-width: 768px) {
             grid-template-columns: 1fr;
-            grid-template-rows: 400px auto;
+            grid-template-rows: auto auto;
             padding: 0;
-        }
-
-        @media screen and (max-width: 519px) {
-            grid-template-rows: 430px auto;
-        }
-        @media screen and (max-width: 460px) {
-            grid-template-rows: 450px auto;
-        }
-        @media screen and (max-width: 420px) {
-            grid-template-rows: 470px auto;
-        }
-        
-        @media screen and (max-width: 360px) {
-            grid-template-rows: 500px auto;
-        }
-        
-        @media screen and (max-width: 330px) {
-            grid-template-rows: 550px auto;
-        }
-        
-        @media screen and (max-width: 295px) {
-            grid-template-rows: 570px auto;
         }
 `
 
@@ -134,9 +106,6 @@ const Download = styled .div`
 `
 
 const Image = styled.div`
-    display: flex;
-    justify-content: center;
-    align-items: center;
     overflow: hidden;
     height: 450px;
 
@@ -157,6 +126,9 @@ const Image = styled.div`
     }
     @media screen and (max-width: 945px) {
         height: 700px;
+    }
+    @media screen and (max-width: 768px) {
+        height: 400px;
     }
     @media screen and (max-width: 500px) {
         height: 350px;

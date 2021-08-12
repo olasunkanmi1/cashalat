@@ -5,7 +5,7 @@ import styled, { css } from 'styled-components/macro'
 const Container = styled.section`
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 500px;
+    grid-template-rows: 400px;
     grid-gap: 20px;
     padding: 2rem 6rem 1rem 6rem;
 
@@ -13,6 +13,9 @@ const Container = styled.section`
         padding: 2rem 5rem 0 5rem;
     }
 
+    @media screen and (max-width: 985px) {
+        grid-template-rows: 500px;
+    }
     @media screen and (max-width: 920px) {
         padding: 2rem 4.5rem 0 4.5rem;
     }
@@ -24,56 +27,25 @@ const Container = styled.section`
     @media screen and (max-width: 768px) {
         padding: 2rem 3rem;
         grid-template-columns: 1fr;
-        grid-template-rows: 250px auto;
-    }
-
-    @media screen and (max-width: 700px) {
-        grid-template-rows: 300px auto;
+        grid-template-rows: auto auto;
     }
 
     @media screen and (max-width: 450px) {
         padding: 2rem 1.5rem;
     }
-
-    @media screen and (max-width: 535px) {
-        grid-template-rows: 350px auto;
-    }
-    
-    @media screen and (max-width: 500px) {
-        grid-template-rows: 300px auto;
-    }
-    
-    @media screen and (max-width: 400px) {
-        grid-template-rows: 320px auto;
-    }
-
-    @media screen and (max-width: 345px) {
-        grid-template-rows: 360px auto;
-    }
-
-    @media screen and (max-width: 315px) {
-        grid-template-rows: 400px auto;
-    }
-    @media screen and (max-width: 300px) {
-        grid-template-rows: 420px auto;
-    }
 `
 
 const Image = styled.div`
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     
     img {
         width: 100%;
-        width: 100%;
-        object-fit: cover;
+        height: 100%;
+        object-fit: contain;
     }
 `
 
 const Info = styled.div`
     display: flex;
-    justify-content: space-between;
     flex-direction: column;
     padding: 5rem 0;
 
@@ -88,6 +60,7 @@ const Info = styled.div`
         color: #fff;
         border-radius: 10px;
         width: 200px;
+        margin-bottom: 10px;
 
         @media screen and (max-width: 500px) {
             font-size: 15px;
@@ -99,6 +72,7 @@ const Info = styled.div`
         font-size: 50px;
         font-weight: 700;
         color: #0847A8;
+        margin-bottom: 20px;
 
         @media screen and (max-width: 500px) {
             font-size: 40px;
@@ -118,15 +92,21 @@ const Info = styled.div`
         }
     }
 
-    @media screen and (max-width: 1070px) {
+    @media screen and (max-width: 1455px) {
         padding: 4rem 0;
     }
     
-    @media screen and (max-width: 900px) {
+    @media screen and (max-width: 1225px) {
         padding: 2rem 0;
     }
 
-    @media screen and (max-width: 820px) {
+    @media screen and (max-width: 1165px) {
+        padding: 0;
+    }
+    @media screen and (max-width: 985px) {
+        padding: 2rem 0;
+    }
+    @media screen and (max-width: 900px) {
         padding: 0;
     }
 `
