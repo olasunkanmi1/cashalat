@@ -6,7 +6,7 @@ import image from '../images/payment1.png'
 const Container = styled.section`
     display: grid;
     grid-template-columns: .40fr .60fr;
-    grid-template-rows: 600px;
+    grid-template-rows: 700px;
     grid-gap: 50px;
     margin-top: 75px;
     padding: 4rem 0 2rem 6rem;
@@ -14,7 +14,7 @@ const Container = styled.section`
     @media screen and (max-width: 1580px) {
         grid-gap: 20px;
     }
-    @media screen and (max-width: 1300px) {
+    @media screen and (max-width: 1400px) {
         grid-template-rows: 600px;
     }
     @media screen and (max-width: 1105px) {
@@ -37,34 +37,16 @@ const Container = styled.section`
     }
 
     @media screen and (max-width: 768px) {
-        padding: 4rem 3rem;
+        padding: 4rem 3rem 0rem 3rem;
         grid-template-columns: 1fr;
-        grid-template-rows: 150px 400px;
-    }
-    @media screen and (max-width: 660px) {
-        grid-template-rows: 180px 400px;
-    }
-    @media screen and (max-width: 580px) {
-        grid-template-rows: 150px 400px;
-    }
-    @media screen and (max-width: 550px) {
-        grid-template-rows: 170px 400px;
-    }
-    @media screen and (max-width: 540px) {
-        grid-template-rows: 190px 400px;
-    }
-    @media screen and (max-width: 455px) {
-        grid-template-rows: 220px 400px;
+        grid-template-rows: auto 400px;
     }
     @media screen and (max-width: 450px) {
-        padding: 4rem 1.5rem;
+        padding: 4rem 1.5rem 0rem 1.5rem;
+        grid-template-rows: auto 350px;
     }
-    
-    @media screen and (max-width: 440px) {
-        grid-template-rows: 220px 400px;
-    }
-    @media screen and (max-width: 380px) {
-        grid-template-rows: 220px 300px;
+    @media screen and (max-width: 370px) {
+        grid-template-rows: auto 300px;
     }
 `
 
@@ -77,14 +59,14 @@ const Info = styled.div`
             padding: 11rem 0;
         }
         
-        @media screen and (max-width: 1150px) {
+        @media screen and (max-width: 1170px) {
             padding: 9rem 0;
         }
 
         @media screen and (max-width: 1105px) {
             padding: 4rem 0;
         }
-        @media screen and (max-width: 930px) {
+        @media screen and (max-width: 960px) {
             padding: 2rem 0;
         }
         @media screen and (max-width: 768px) {
@@ -129,36 +111,15 @@ const Image = styled.div`
         height: 100%;
         object-fit: cover:
         border-radius:  40px;
-
-        @media screen and (max-width: 1155px) {
-            width: 130%;
-        }
+        
         @media screen and (max-width: 1107px) {
-            width: 130%;
+            width: 170%;
         }
-        @media screen and (max-width: 1104px) {
-            width: 190%;
-        }
-        @media screen and (max-width: 1040px) {
-            width: 210%;
-        }
-        @media screen and (max-width: 970px) {
-            width: 220%;
-        }
-        @media screen and (max-width: 930px) {
-            width: 190%;
+        @media screen and (max-width: 925px) {
+            width: 160%;
         }
         @media screen and (max-width: 768px) {
-            width: 120%;
-        }
-        @media screen and (max-width: 450px) {
-            width: 130%;
-        }
-        @media screen and (max-width: 430px) {
-            width: 140%;
-        }
-        @media screen and (max-width: 400px) {
-            width: 130%;
+            width: 100%;
         }
     }
 `

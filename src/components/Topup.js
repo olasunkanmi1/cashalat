@@ -12,12 +12,15 @@ const Container = styled.section`
     @media screen and (max-width: 1500px) {
         grid-template-rows: 500px;
     }
-    @media screen and (max-width: 1200px) {
-        grid-template-rows: 400px;
+    @media screen and (max-width: 1300px) {
+        grid-template-rows: 450px;
     }
-    @media screen and (max-width: 1000px) {
+    @media screen and (max-width: 1100px) {
         grid-template-rows: 400px;
         padding: 4rem 5rem;
+    }
+    @media screen and (max-width: 1000px) {
+        grid-template-columns: .60fr .40fr;
     }
 
     @media screen and (max-width: 920px) {
@@ -28,34 +31,35 @@ const Container = styled.section`
         padding: 4rem 4rem;
     }
 
+    @media screen and (max-width: 830px) {
+        grid-template-columns: .50fr .50fr;
+        grid-template-rows: 350px;
+    }
+
     @media screen and (max-width: 768px) {
         padding: 2rem 3rem;
         grid-template-columns: 1fr;
-        grid-template-rows: 150px 500px;
+        grid-template-rows: auto 400px;
         grid-gap: 20px;
     }
-
-    @media screen and (max-width: 600px) {
-        grid-template-rows: 150px 400px;
+    @media screen and (max-width: 500px) {
+        grid-template-rows: auto 350px;
     }
     @media screen and (max-width: 450px) {
         padding: 2rem 1.5rem;
     }
+
     @media screen and (max-width: 390px) {
-        grid-template-rows: 170px 300px;
+        grid-template-rows: auto 300px;
     }
-    @media screen and (max-width: 365px) {
-        grid-template-rows: 190px 300px;
-    }
-    @media screen and (max-width: 350px) {
-        grid-template-rows: 220px 300px;
+    @media screen and (max-width: 340px) {
+        grid-template-rows: auto 250px;
     }
 `
 
 const Info = styled.div`
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
         padding: 14rem 0 14rem 8rem;
 
         @media screen and (max-width: 1500px) {
@@ -70,7 +74,7 @@ const Info = styled.div`
         @media screen and (max-width: 1175px) {
             padding: 5rem 0 5rem 1rem;
         }
-        @media screen and (max-width: 1140px) {
+        @media screen and (max-width: 840px) {
             padding: 2rem 0 2rem 1rem;
         }
         @media screen and (max-width: 768px) {
@@ -80,12 +84,16 @@ const Info = styled.div`
         h2 {
             font-size: 70px;
             color: #0847A8;
+            margin-bottom: 15px;
             
             @media screen and (max-width: 1690px) {
                 font-size: 60px;
             }
+            @media screen and (max-width: 1000px) {
+                font-size: 55px;
+            }
 
-            @media screen and (max-width: 790px) {
+            @media screen and (max-width: 910px) {
                 font-size: 50px;
             }
             
