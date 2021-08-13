@@ -30,44 +30,28 @@ const Container = styled.section`
     }
 
     @media screen and (max-width: 768px) {
-        padding: 4rem 3rem;
+        padding: 4rem 3rem 2rem 3rem;
         grid-template-columns: 1fr;
-        grid-template-rows: 200px 400px;
+        grid-template-rows: auto 400px;
     }
-    
-    @media screen and (max-width: 725px) {
-        grid-template-rows: 250px 400px;
-    }
-
-    @media screen and (max-width: 580px) {
-        grid-template-rows: 230px 400px;
-    }
-    @media screen and (max-width: 490px) {
-        grid-template-rows: 260px 400px;
+    @media screen and (max-width: 500px) {
+        grid-template-rows: auto 350px;
     }
     @media screen and (max-width: 450px) {
-        padding: 4rem 1.5rem;
-    }
-    
-    @media screen and (max-width: 440px) {
-        grid-template-rows: 260px 400px;
-    }
-    @media screen and (max-width: 340px) {
-        grid-template-rows: 350px 400px;
+        padding: 4rem 1.5rem 2rem 1.5rem;
     }
 `
 
 const Info = styled.div`
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
         padding: 8rem 0;
 
         @media screen and (max-width: 1690px) {
             padding: 10rem 0;
         }
         
-        @media screen and (max-width: 1450px) {
+        @media screen and (max-width: 1550px) {
             padding: 8rem 0;
         }
 
@@ -75,12 +59,8 @@ const Info = styled.div`
             padding: 4rem 0;
         }
         
-        @media screen and (max-width: 1180px) {
+        @media screen and (max-width: 1200px) {
             padding: 2rem 0;
-        }
-
-        @media screen and (max-width: 1050px) {
-            padding: 1rem 0;
         }
         @media screen and (max-width: 768px) {
             padding: 0;
@@ -89,6 +69,7 @@ const Info = styled.div`
         h2 {
             font-size: 70px;
             color: #0847A8;
+            margin-bottom: 15px;
             
             @media screen and (max-width: 1690px) {
                 font-size: 60px;

@@ -33,6 +33,10 @@ const Container = styled.section`
         color: #0847A8;
         margin-bottom: 2rem;
 
+        @media screen and (max-width: 1000px) {
+            margin-bottom: 1rem;
+        }
+
         @media screen and (max-width: 768px) {
             font-size: 50px;
         }

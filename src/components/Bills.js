@@ -6,7 +6,7 @@ import image from '../images/payment1.png'
 const Container = styled.section`
     display: grid;
     grid-template-columns: .40fr .60fr;
-    grid-template-rows: 700px;
+    grid-template-rows: 600px;
     grid-gap: 50px;
     margin-top: 75px;
     padding: 4rem 0 2rem 6rem;
@@ -71,7 +71,6 @@ const Container = styled.section`
 const Info = styled.div`
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
         padding: 13rem 0;
 
         @media screen and (max-width: 1300px) {
@@ -95,6 +94,7 @@ const Info = styled.div`
         h2 {
             font-size: 70px;
             color: #0847A8;
+            margin-bottom: 15px;
             
             @media screen and (max-width: 1690px) {
                 font-size: 60px;
@@ -125,13 +125,11 @@ const Image = styled.div`
         overflow: hidden;
     }
     img {
-        width: 120%;
+        width: 100%;
         height: 100%;
+        object-fit: cover:
         border-radius:  40px;
 
-        @media screen and (max-width: 1250px) {
-            width: 120%;
-        }
         @media screen and (max-width: 1155px) {
             width: 130%;
         }

@@ -37,30 +37,45 @@ const Container = styled.section`
         flex-direction: column;
         align-items: center;
         width: 100%;
-        height: 600px;
+        margin-bottom: 550px;
+
+        @media screen and (max-width: 670px) {
+            margin-bottom: 450px;
+        }
+
+        @media screen and (max-width: 535px) {
+            margin-bottom: 350px;
+        }
+        @media screen and (max-width: 400px) {
+            margin-bottom: 250px;
+        }
+
+        @media screen and (max-width: 350px) {
+            margin-bottom: 150px;
+        }
 
         h2 {
-            font-size: 50px;
+            font-size: 60px;
             font-weight: 700;
             color: #0847A8;
             text-align: center;
             margin-bottom: 1.5rem;
             width: 40%;
 
-            @media screen and (max-width: 980px) {
+            @media screen and (max-width: 1185px) {
                 width: 50%;
             }
             
-            @media screen and (max-width: 790px) {
-                width: 60%;
+            @media screen and (max-width: 950px) {
+                width: 65%;
+            }
+
+            @media screen and (max-width: 705px) {
+                width: 80%;
             }
             
             @media screen and (max-width: 670px) {
                 font-size: 45px;
-            }
-            
-            @media screen and (max-width: 600px) {
-                width: 80%;
             }
 
             @media screen and (max-width: 500px) {
@@ -69,7 +84,6 @@ const Container = styled.section`
             
             @media screen and (max-width: 470px) {
                 font-size: 40px;
-                width: 100%;
             }
             @media screen and (max-width: 320px) {
                 font-size: 35px;
@@ -80,23 +94,6 @@ const Container = styled.section`
             text-align: center;
         }
 
-        @media screen and (max-width: 700px) {
-            height: 400px;
-        }
-        @media screen and (max-width: 600px) {
-            height: 370px;
-        }  
-        @media screen and (max-width: 500px) {
-            height: 400px;
-        }  
-
-        @media screen and (max-width: 400px) {
-            height: 300px;
-        }
-        
-        @media screen and (max-width: 300px) {
-            height: 250px;
-        }
     }
     
 `
@@ -104,10 +101,25 @@ const Container = styled.section`
 const Image = styled.div`
     height: 650px;
     position: absolute;
-    bottom: -150px;
+    bottom: -700px;
 
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: 670px) {
         height: 550px;
+        bottom: -600px;
+    }
+
+    @media screen and (max-width: 535px) {
+        height: 450px;
+        bottom: -500px;
+    }
+
+    @media screen and (max-width: 400px) {
+        height: 350px;
+        bottom: -400px;
+    }
+    @media screen and (max-width: 350px) {
+        height: 250px;
+        bottom: -300px;
     }
 
     img {

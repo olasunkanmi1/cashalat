@@ -31,22 +31,24 @@ const Container = styled.section`
     @media screen and (max-width: 768px) {
         padding: 2rem 3rem 4rem 3rem;
         grid-template-columns: 1fr;
-        grid-template-rows: 150px;
+        grid-template-rows: auto 400px;
         grid-gap: 20px;
     }
 
+    @media screen and (max-width: 550px) {
+        grid-template-rows: auto 300px;
+    }
     @media screen and (max-width: 450px) {
         padding: 2rem 1.5rem 4rem 1.5rem;
     }
     @media screen and (max-width: 385px) {
-        grid-template-rows: 230px;
+        grid-template-rows: auto 250px;
     }
 `
 
 const Info = styled.div`
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
         padding: 14rem 0 14rem 8rem;
 
         @media screen and (max-width: 1500px) {
@@ -71,6 +73,7 @@ const Info = styled.div`
         h2 {
             font-size: 70px;
             color: #0847A8;
+            margin-bottom: 15px;
             
             @media screen and (max-width: 1690px) {
                 font-size: 60px;
