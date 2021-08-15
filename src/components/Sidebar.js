@@ -15,7 +15,7 @@ const Container = styled.div`
     right: 0;
     transition: .3s ease-in-out;
     opacity: ${({ isOpen }) => (isOpen ? '1' : '0')};
-    top: ${({ isOpen }) => (isOpen ? '0' : '-100%')};
+    top: ${({ isOpen }) => (isOpen ? '0' : '-150%')};
     border-bottom: 1px solid #ccc;
 `
 
@@ -26,6 +26,10 @@ const SidebarMenu = styled.div`
     width: 100%;
     margin-top: 5rem;
     padding: 1rem 5rem;
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
 
     @media screen and (max-width: 600px) {
         padding: 1rem 4rem;
