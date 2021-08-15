@@ -6,81 +6,75 @@ import image from '../images/inv1.png'
 const Container = styled.section`
     display: grid;
     grid-template-columns: .40fr .60fr;
-    grid-template-rows: 600px;
+    grid-template-rows: 550px;
     grid-gap: 50px;
     margin-top: 75px;
-    padding: 4rem 0 2rem 6rem;
+    padding: 4rem 0 2rem 12rem;
 
-    @media screen and (max-width: 1580px) {
-        grid-gap: 20px;
-    }
-    @media screen and (max-width: 1300px) {
+    @media screen and (max-width: 1800px) {
         grid-template-rows: 500px;
     }
+    @media screen and (max-width: 1580px) {
+        grid-gap: 20px;
+        grid-template-rows: 450px;
+    }
+    @media screen and (max-width: 1200px) {
+        padding: 4rem  0 4rem 10rem;
+    }
     @media screen and (max-width: 1000px) {
-        padding: 4rem  0 4rem 5rem;
+        padding: 4rem  0 4rem 8rem;
     }
 
     @media screen and (max-width: 920px) {
-        padding: 4rem 0rem 4rem 4.5rem;
-    }
-
-    @media screen and (max-width: 850px) {
-        padding: 4rem 0rem 4rem 4rem;
+        padding: 4rem 0rem 4rem 6rem;
     }
 
     @media screen and (max-width: 768px) {
-        padding: 4rem 3rem 2rem 3rem;
+        padding: 4rem 5rem 2rem 5rem;
         grid-template-columns: 1fr;
-        grid-template-rows: auto 400px;
-    }
-    @media screen and (max-width: 500px) {
         grid-template-rows: auto 350px;
     }
+    @media screen and (max-width: 600px) {
+        padding: 4rem 4rem 2rem 4rem;
+    }
+    @media screen and (max-width: 500px) {
+        padding: 4rem 3rem 2rem 3rem;
+    }
     @media screen and (max-width: 450px) {
-        padding: 4rem 1.5rem 2rem 1.5rem;
+        padding: 4rem 2rem;
     }
 `
 
 const Info = styled.div`
         display: flex;
         flex-direction: column;
-        padding: 8rem 0;
+        padding: 9rem 0;
 
-        @media screen and (max-width: 1690px) {
-            padding: 10rem 0;
+        @media screen and (max-width: 1590px) {
+            padding: 7rem 0;
         }
         
         @media screen and (max-width: 1550px) {
-            padding: 8rem 0;
+            padding: 5rem 0;
         }
-
-        @media screen and (max-width: 1300px) {
-            padding: 4rem 0;
-        }
-        
-        @media screen and (max-width: 1200px) {
-            padding: 2rem 0;
+        @media screen and (max-width: 1090px) {
+            padding: 3rem 0;
         }
         @media screen and (max-width: 768px) {
             padding: 0;
         }
 
         h2 {
-            font-size: 70px;
+            font-size: 50px;
             color: #0847A8;
             margin-bottom: 15px;
             
-            @media screen and (max-width: 1690px) {
-                font-size: 60px;
-            }
-
-            @media screen and (max-width: 768px) {
-                font-size: 50px;
+            @media screen and (max-width: 900px) {
+                font-size: 40px;
             }
             
             @media screen and (max-width: 580px) {
-                font-size: 40px;
+                font-size: 30px;
             }
         }
 
@@ -105,13 +99,14 @@ const Image = styled.div`
         object-fit: cover;
         border-radius:  40px 0 0 40px;
 
-        @media screen and (max-width: 1050px) {
-            width: 230%;
+       
+        @media screen and (max-width: 940px) {
+            width: 140%;
+        }
+        @media screen and (max-width: 930px) {
+            width: 160%;
         }
         @media screen and (max-width: 900px) {
-            width: 250%;
-        }
-        @media screen and (max-width: 768px) {
             width: 100%;
             border-radius: 40px;
         }

@@ -6,40 +6,47 @@ import image from '../images/inv2.png'
 const Container = styled.section`
     display: grid;
     grid-template-columns: .50fr .50fr;
-    grid-template-rows: 600px;
-    padding: 4rem 6rem 2rem 0;
+    grid-template-rows: 550px;
+    padding: 4rem 12rem 2rem 0;
 
-    @media screen and (max-width: 1500px) {
-        grid-template-rows: 500px;
+    @media screen and (max-width: 1650px) {
+        grid-template-rows: 450px;
+    }
+    @media screen and (max-width: 1350px) {
+        grid-template-rows: 400px;
     }
     @media screen and (max-width: 1200px) {
-        grid-template-rows: 400px;
+        grid-template-rows: 350px;
+        padding: 4rem 10rem 2rem 0;
     }
     @media screen and (max-width: 1000px) {
         grid-template-rows: 300px;
-        padding: 4rem 5rem 2rem 0;
+        padding: 4rem 8rem 2rem 0;
     }
 
     @media screen and (max-width: 920px) {
-        padding: 4rem 4.5rem 2rem 0;
-    }
-
-    @media screen and (max-width: 850px) {
-        padding: 4rem 4rem 2rem 0;
+        padding: 4rem 6rem 2rem 0;
     }
 
     @media screen and (max-width: 768px) {
-        padding: 2rem 3rem 4rem 3rem;
+        padding: 2rem 5rem 4rem 5rem;
         grid-template-columns: 1fr;
-        grid-template-rows: auto 400px;
+        grid-template-rows: auto 350px;
         grid-gap: 20px;
+    }
+
+    @media screen and (max-width: 600px) {
+        padding: 2rem 4rem 4rem 4rem;
+    }
+    @media screen and (max-width: 500px) {
+        padding: 2rem 3rem 4rem 3rem;
     }
 
     @media screen and (max-width: 550px) {
         grid-template-rows: auto 300px;
     }
     @media screen and (max-width: 450px) {
-        padding: 2rem 1.5rem 4rem 1.5rem;
+        padding: 2rem 2rem 4rem 2rem;
     }
     @media screen and (max-width: 385px) {
         grid-template-rows: auto 250px;
@@ -49,7 +56,7 @@ const Container = styled.section`
 const Info = styled.div`
         display: flex;
         flex-direction: column;
-        padding: 14rem 0 14rem 8rem;
+        padding: 10rem 0 10rem 8rem;
 
         @media screen and (max-width: 1500px) {
             padding: 9rem 0 9rem 8rem;
@@ -60,31 +67,30 @@ const Info = styled.div`
         @media screen and (max-width: 1270px) {
             padding: 9rem 0 9rem 2rem;
         }
-        @media screen and (max-width: 1170px) {
+        @media screen and (max-width: 1200px) {
             padding: 5rem 0 5rem 2rem;
         }
-        @media screen and (max-width: 1000px) {
-            padding: 0 0 0 2rem;
+        @media screen and (max-width: 1040px) {
+            padding: 3rem 0 3rem 2rem;
         }
         @media screen and (max-width: 768px) {
             padding: 0;
         }
 
         h2 {
-            font-size: 70px;
+            font-size: 50px;
             color: #0847A8;
             margin-bottom: 15px;
-            
-            @media screen and (max-width: 1690px) {
-                font-size: 60px;
-            }
-
             @media screen and (max-width: 768px) {
                 font-size: 50px;
             }
             
-            @media screen and (max-width: 580px) {
+            @media screen and (max-width: 900px) {
                 font-size: 40px;
+            }
+
+            @media screen and (max-width: 580px) {
+                font-size: 30px;
             }
         }
 

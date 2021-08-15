@@ -6,34 +6,40 @@ const Container = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 5rem 6rem;
+    padding: 5rem 12rem 4rem 12rem;
     background: #E5F9FF;
 
+    @media screen and (max-width: 1200px) {
+        padding: 5rem 10rem 4rem 10rem;
+    }
+
     @media screen and (max-width: 1000px) {
-        padding: 5rem 5rem;
+        padding: 5rem 8rem 4rem 8rem;
     }
 
     @media screen and (max-width: 920px) {
-        padding: 5rem 4.5rem;
-    }
-
-    @media screen and (max-width: 850px) {
-        padding: 5rem 4rem;
+        padding: 5rem 6rem 4rem 6rem;
     }
 
     @media screen and (max-width: 768px) {
-        padding: 5rem 3rem;
+        padding: 5rem 5rem 4rem 5rem;
+    }
+    @media screen and (max-width: 600px) {
+        padding: 5rem 4rem 3rem 4rem;
+    }
+    @media screen and (max-width: 500px) {
+        padding: 5rem 3rem 3rem 3rem;
     }
 
     @media screen and (max-width: 450px) {
-        padding: 5rem 1.5rem;
+        padding: 5rem 2rem 3rem 2rem;
     }
 
     h1 {
-        margin-bottom: 4rem;
+        margin-bottom: 3rem;
         text-align: center;
         width: 45%;
-        font-size: 70px;
+        font-size: 50px;
         color: #0847A8;
 
         @media screen and (max-width: 1880px) {
@@ -57,24 +63,20 @@ const Container = styled.div`
         @media screen and (max-width: 1150px) {
             width: 90%;
         }
-        @media screen and (max-width: 1035px) {
-            font-size: 60px;
-        }
         @media screen and (max-width: 870px) {
             width: 100%;
         }
-        @media screen and (max-width: 750px) {
-            font-size: 50px;
+        @media screen and (max-width: 768px) {
+            font-size: 40px;
         }
         @media screen and (max-width: 450px) {
-            font-size: 40px;
+            font-size: 30px;
         }
     }
 
     p {
         width: 60%;
         text-align: center;
-        margin-bottom: 3rem;
         font-size: 20px;
 
         @media screen and (max-width: 1155px) {

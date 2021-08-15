@@ -9,27 +9,33 @@ const Container = styled.section`
     align-items: center;
     justify-content: center;
     margin-top: 75px;
-    padding: 4rem 6rem 0 6rem;
+    padding: 4rem 12rem 0 12rem;
     position: relative;
 
+    @media screen and (max-width: 1200px) {
+        padding: 4rem 10rem 0 10rem;
+    }
+
     @media screen and (max-width: 1000px) {
-        padding: 4rem 5rem 0 5rem;
+        padding: 4rem 8rem 0 8rem;
     }
 
     @media screen and (max-width: 920px) {
-        padding: 4rem 4.5rem 0 4.5rem;
-    }
-
-    @media screen and (max-width: 850px) {
-        padding: 4rem 4rem 0 4rem;
+        padding: 4rem 6rem 0 6rem;
     }
 
     @media screen and (max-width: 768px) {
+        padding: 3rem 5rem 0 5rem;
+    }
+    @media screen and (max-width: 600px) {
+        padding: 3rem 4rem 0 4rem;
+    }
+    @media screen and (max-width: 500px) {
         padding: 3rem 3rem 0 3rem;
     }
 
     @media screen and (max-width: 450px) {
-        padding: 2rem 1.5rem 0 1.5rem;
+        padding: 2rem 2rem 0 2rem;
     }
 
     div {
@@ -55,7 +61,7 @@ const Container = styled.section`
         }
 
         h2 {
-            font-size: 60px;
+            font-size: 50px;
             font-weight: 700;
             color: #0847A8;
             text-align: center;
@@ -75,7 +81,7 @@ const Container = styled.section`
             }
             
             @media screen and (max-width: 670px) {
-                font-size: 45px;
+                font-size: 40px;
             }
 
             @media screen and (max-width: 500px) {
@@ -83,15 +89,17 @@ const Container = styled.section`
             }
             
             @media screen and (max-width: 470px) {
-                font-size: 40px;
-            }
-            @media screen and (max-width: 320px) {
-                font-size: 35px;
+                font-size: 30px;
             }
         }
 
         h4 {
             text-align: center;
+            font-size: 20px;
+
+            @media screen and (max-width: 768px) {
+                font-size: 18px;
+            }
         }
 
     }
