@@ -4,32 +4,37 @@ import image from '../images/culture1.png'
 
 //styles
 const Container = styled.section`
-    padding: 4rem 0 4rem 6rem;
+    padding: 4rem 0 4rem 12rem;
     margin-top: 75px;
 
+    @media screen and (max-width: 1200px) {
+        padding: 4rem 0 4rem 10rem;
+    }
     @media screen and (max-width: 1000px) {
-        padding: 4rem 5rem;
+        padding: 4rem 8rem;
     }
 
     @media screen and (max-width: 920px) {
-        padding: 4rem 4.5rem;
-    }
-
-    @media screen and (max-width: 850px) {
-        padding: 4rem 4rem;
+        padding: 4rem 6rem;
     }
 
     @media screen and (max-width: 768px) {
+        padding: 4rem 5rem;
+    }
+
+    @media screen and (max-width: 600px) {
+        padding: 4rem 4rem;
+    }
+    @media screen and (max-width: 500px) {
         padding: 4rem 3rem;
-        flex-direction: column;
     }
 
     @media screen and (max-width: 450px) {
-        padding: 4rem 1.5rem 0 1.5rem;
+        padding: 4rem 2rem 2rem;
     }
 
     h1 {
-        font-size: 60px;
+        font-size: 50px;
         color: #0847A8;
         margin-bottom: 2rem;
 
@@ -38,10 +43,10 @@ const Container = styled.section`
         }
 
         @media screen and (max-width: 768px) {
-            font-size: 50px;
+            font-size: 40px;
         }
         @media screen and (max-width: 500px) {
-            font-size: 40px;
+            font-size: 30px;
         }
     }
 `
@@ -74,7 +79,7 @@ const Info = styled.div`
     }
 
     p {
-        font-size: 20px;
+        font-size: 18px;
 
         @media screen and (max-width: 1000px) {
             margin-bottom: 15px;
@@ -89,24 +94,25 @@ const Image = styled.div`
     @media screen and (max-width: 1365px) {
         padding-left: 2rem;
     }
+    @media screen and (max-width: 1050px) {
+        height: 450px;
+    }
 
-    @media screen and (max-width: 1200px) {
-        height: 500px;
-    }
-    @media screen and (max-width: 1100px) {
-        height: 600px;
-    }
     @media screen and (max-width: 1000px) {
-        height: 500px;
-        padding: 2rem 0;
+        padding-left: 0;
     }
-    @media screen and (max-width: 670px) {
+    @media screen and (max-width: 770px) {
         height: 400px;
     }
 
-    @media screen and (max-width: 540px) {
-        padding: 0;
+    @media screen and (max-width: 700px) {
         height: 300px
+    }
+    @media screen and (max-width: 500px) {
+        height: 250px
+    }
+    @media screen and (max-width: 380px) {
+        height: 200px
     }
 
     img {
@@ -117,9 +123,6 @@ const Image = styled.div`
 
         @media screen and (max-width: 1000px) {
             object-fit: cover;
-        }
-        @media screen and (max-width: 540px) {
-            object-fit: contain;
         }
     }
 `

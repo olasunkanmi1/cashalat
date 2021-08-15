@@ -6,28 +6,33 @@ import image from '../images/culture2.png'
 const Container = styled.section`
     display: flex;
     justify-content: space-between;
-    padding: 4rem 6rem;
+    padding: 4rem 12rem;
     background: #E5F9FF;
 
+    @media screen and (max-width: 1200px) {
+        padding: 4rem 10rem;
+    }
+
     @media screen and (max-width: 1000px) {
-        padding: 4rem 5rem;
+        padding: 4rem 8rem;
         flex-direction: column;
     }
 
     @media screen and (max-width: 920px) {
-        padding: 4rem 4.5rem;
+        padding: 4rem 6rem;
     }
-
-    @media screen and (max-width: 850px) {
+    @media screen and (max-width: 768px) {
+        padding: 4rem 5rem;
+    }
+    @media screen and (max-width: 600px) {
         padding: 4rem 4rem;
     }
-
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 500px) {
         padding: 4rem 3rem;
     }
 
     @media screen and (max-width: 450px) {
-        padding: 4rem 1.5rem;
+        padding: 4rem 2rem;
     }
 `
 
@@ -57,16 +62,16 @@ const Image = styled.div`
     }
 
     h1 {
-        font-size: 60px;
+        font-size: 50px;
         color: #0847A8;
         margin-bottom: 2rem;
         width: 100%;
 
         @media screen and (max-width: 768px) {
-            font-size: 50px;
+            font-size: 40px;
         }
         @media screen and (max-width: 500px) {
-            font-size: 40px;
+            font-size: 30px;
         }
     }
 
@@ -92,11 +97,15 @@ const Info = styled.div`
     }
 
     p {
-        font-size: 20px;
+        font-size: 18px;
         margin-bottom: 15px;
 
         &:last-child {
             margin-bottom: 0;
+        }
+
+        @media screen and (max-width: 1000px) {
+            margin-bottom: 15px;
         }
     }
 `

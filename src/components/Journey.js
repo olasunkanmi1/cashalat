@@ -9,29 +9,22 @@ import arr from '../images/arr.svg'
 const Container = styled.section`
     display: grid;
     grid-template-columns: .25fr .50fr .25fr;
-    padding: 3rem 6rem 5rem 6rem;
+    padding: 0rem 12rem 5rem 12rem;
     width: 100vw;
 
-    @media screen and (max-width: 1400px) {
-        padding: 0 6rem 3rem 5rem;
+    @media screen and (max-width: 1200px) {
+        padding: 0 10rem 3rem 10rem;
     }
     @media screen and (max-width: 1000px) {
-        padding: 3rem 5rem;
+        padding: 0 8rem 3rem 8rem;
     }
 
     @media screen and (max-width: 920px) {
-        padding: 2rem 4.5rem 3rem 4.5rem;
-    }
-
-    @media screen and (max-width: 850px) {
-        padding: 2rem 4rem;
+        padding: 0 6rem 3rem 6rem;
     }
 
     @media screen and (max-width: 768px) {
-        padding: 2rem 3rem;
-    }
-    @media screen and (max-width: 705px) {
-        padding: 4rem 3rem;
+        padding: 0 5rem 3rem 5rem;
     }
 
     @media screen and (max-width: 690px) {
@@ -39,15 +32,18 @@ const Container = styled.section`
         grid-template-rows: auto 300px;
     }
     @media screen and (max-width: 600px) {
-        padding: 0 3rem 4rem 3rem;
+        padding: 0 4rem 3rem 4rem;
     }
     @media screen and (max-width: 580px) {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto 300px;
     }
 
+    @media screen and (max-width: 500px) {
+        padding: 0 3rem 2rem 3rem;
+    }
     @media screen and (max-width: 450px) {
-        padding: 2rem 1.5rem;
+        padding: 0 2rem 2rem 2rem;
     }
 
     img {
@@ -65,8 +61,12 @@ const Container = styled.section`
             font-size: 40px;
             text-align: center;
 
-            @media screen and (max-width: 770px) {
+            @media screen and (max-width: 800px) {
                 font-size: 35px;
+            }
+            
+            @media screen and (max-width: 500px) {
+                font-size: 30px;
             }
         }
 
