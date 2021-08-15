@@ -8,37 +8,44 @@ import Newsletter from './Newsletter'
 //styles
 const Container = styled.section`
     width: 100%;
-    padding: 4rem 6rem;
+    padding: 4rem 12rem;
     margin-top: 75px;
     overflow: hidden;
 
+    @media screen and (max-width: 1200px) {
+        padding: 4rem 10rem;
+    }
     @media screen and (max-width: 1000px) {
-        padding: 4rem 5rem;
+        padding: 4rem 8rem;
     }
 
     @media screen and (max-width: 920px) {
-        padding: 4rem 4.5rem;
+        padding: 4rem 6rem;
     }
-
-    @media screen and (max-width: 850px) {
-        padding: 4rem 4rem;
-    }
-
     @media screen and (max-width: 768px) {
+        padding: 3rem 5rem 0 5rem;
+    }
+    @media screen and (max-width: 600px) {
+        padding: 3rem 4rem 0 4rem;
+    }
+    @media screen and (max-width: 500px) {
         padding: 3rem 3rem 0 3rem;
     }
 
     @media screen and (max-width: 450px) {
-        padding: 2rem 1.5rem 0 1.5rem;
+        padding: 2rem 2rem 0 2rem;
     }
 `
 
 const Wrapper = styled.div`
         width: 100%;
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: .4fr .6fr;
         grid-gap: 50px;
         
+        @media screen and (max-width: 1200px) {
+            grid-template-columns: 1fr 1fr;
+        }
 
         @media screen and (max-width: 960px) {
             grid-gap: 30px;
@@ -55,39 +62,40 @@ const Info = styled.div`
     flex-direction: column;
 
     h1 {
-        font-size: 70px;
+        font-size: 50px;
         font-weight: 700;
         color: #0847A8;
-        margin-bottom: 20px;
+        margin-bottom: 15px;
 
-        @media screen and (max-width: 1000px) {
-            font-size: 60px;
+        @media screen and (max-width: 1100px) {
+            font-size: 40px;
         }
-        @media screen and (max-width: 500px) {
-            font-size: 50px;
+        @media screen and (max-width: 600px) {
+            font-size: 35px;
         }
-        @media screen and (max-width: 420px) {
-            font-size: 45px;
+        @media screen and (max-width: 460px) {
+            font-size: 30px;
         }
     }
 
     p {
-        font-size: 20px;
-        margin-bottom: 20px;
+        font-size: 15px;
+        font-weight: 700;
+        margin-bottom: 15px;
 
         @media screen and (max-width: 450px) {
-            font-size: 18px;
+            font-size: 15px;
         }
     }
 `
 
 const Download = styled .div`  
     display: flex;
-    margin-bottom: 20px;
+    justify-content: space-between;
+    margin-bottom: 15px;
 
     img {
         height: 40px;
-        margin-right: 15px;
 
         @media screen and (max-width: 360px) {
             height: 35px;

@@ -11,16 +11,19 @@ const SubMenu = styled(AiOutlineDown)`
 
 export const menuData =[
     {title: "Company", icon: <SubMenu className="sm" />, submenu: [
-        {title: 'company-1', link: "/company/company-1"}, 
-        {title: 'company culture', link: "/company/company-culture"}]
+        {title: 'About', link: "/company/about"}, 
+        {title: 'Careers', link: "/company/careers"}]
     },
 
     {title: "Features", icon: <SubMenu className="sm" />, submenu: [
-        {title: 'savings', link: "/features/savings"}, 
+        {title: 'Savings', link: "/features/savings"}, 
         {title: 'Investments', link: "/features/investments"},
         {title: 'loans', link: "/features/loans"},
         {title: 'payments', link: "/features/payments"}]
     },
 
-    {title: "Help", link: "/help", submenu: []}
+    {title: "Help", icon: <SubMenu className="sm" />, submenu: [
+        {title: 'FAQs', link: "/features/faqs"}, 
+        {title: 'Contact', link: "/features/contact"},
+    ]}
 ];

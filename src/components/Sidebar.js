@@ -2,7 +2,6 @@ import React from 'react'
 import styled, { css } from 'styled-components/macro'
 import { menuData } from '../data/MenuData'
 import { Link } from 'react-router-dom'
-import { AiOutlineClose } from 'react-icons/ai'
 import './rough.css'
 
 const Container = styled.div`
@@ -20,22 +19,24 @@ const Container = styled.div`
     border-bottom: 1px solid #ccc;
 `
 
-const Close = styled(AiOutlineClose)`
-    color: #0847A8;
-    height: 40px;
-    width: 40px;
-    cursor: pointer;
-    position: absolute;
-    top: 1.5rem;
-    right: 1.5rem;
-`
 const SidebarMenu = styled.div`
     display: flex;
     align-items: center;
     flex-direction: column;
     width: 100%;
-    margin-top: 4rem;
-    padding: 1rem;
+    margin-top: 5rem;
+    padding: 1rem 5rem;
+
+    @media screen and (max-width: 600px) {
+        padding: 1rem 4rem;
+    }
+    @media screen and (max-width: 500px) {
+        padding: 1rem 3rem;
+    }
+
+    @media screen and (max-width: 450px) {
+        padding: 1rem 2rem;
+    }
 `
 
 const SidebarMenuLink = styled.div`
@@ -107,11 +108,10 @@ const SubMenuLinks = styled(Link)`
 const Sidebar = ({ isOpen, toggle }) => {
     return (
         <Container isOpen={isOpen} onClick={toggle} id="home">
-            <Close onClick={toggle} />
             <SidebarMenu>
                 {menuData.map((item, index) => (
                     <SidebarMenuLink key={index} className="menu">
-                        <div>{item.title} {item.icon}</div>
+                        <div>{item.title}</div>
                         <SubMenu className="sub-menu">
                             {item.submenu.map((item, index) => (
                                 <SubMenuLinks key={index} to={item.link}>

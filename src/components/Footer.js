@@ -8,31 +8,37 @@ import Download from './Download'
 const Container = styled.footer`
     display: grid;
     grid-template-columns: 30% 70%;
-    padding: 6rem 6rem 2rem 6rem;
+    padding: 6rem 12rem 2rem 12rem;
     background: #0847A8;
     color: #fff;
 
+    @media screen and (max-width: 1200px) {
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px auto auto;
+        padding: 6rem 10rem 2rem 10rem;
+    }
     @media screen and (max-width: 1000px) {
-        padding: 6rem 5rem 2rem 5rem;
+        padding: 6rem 8rem 2rem 8rem;
     }
 
     @media screen and (max-width: 920px) {
-        grid-template-columns: 1fr;
-        grid-template-rows: 80px auto auto;
-        padding: 6rem 4.5rem 2rem 4.5rem;
-    }
-
-    @media screen and (max-width: 850px) {
-        padding: 6rem 4rem 2rem 4rem;
+        padding: 6rem 6rem 2rem 6rem;
     }
 
     @media screen and (max-width: 768px) {
-        padding: 6rem 3rem 2rem 3rem;
+        padding: 6rem 5rem 2rem 5rem;
         flex-direction: column;
     }
 
+    @media screen and (max-width: 600px) {
+        padding: 6rem 4rem 2rem 4rem;
+    }
+    @media screen and (max-width: 500px) {
+        padding: 6rem 3rem 2rem 3rem;
+    }
+
     @media screen and (max-width: 450px) {
-        padding: 6rem 1.5rem 2rem 1.5rem;
+        padding: 6rem 2rem 2rem 2rem;
     }
 `
 
@@ -48,7 +54,7 @@ const Logo = styled.div`
         transform: translateY(-50%);
     }
 
-    @media screen and (max-width: 920px) {
+    @media screen and (max-width: 1200px) {
         grid-column: 1 / 3;
     }
     
@@ -85,13 +91,13 @@ const Wrapper = styled.div`
         font-size: 17px;
     }
 
-    @media screen and (max-width: 620px) {
+    @media screen and (max-width: 720px) {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 30px;
     }
     
-    @media screen and (max-width: 330px) {
+    @media screen and (max-width: 360px) {
         grid-template-columns: 1fr 1fr;
     }
 `

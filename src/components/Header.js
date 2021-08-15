@@ -3,42 +3,47 @@ import { Link } from 'react-router-dom'
 import styled, { css } from 'styled-components/macro'
 import logo from '../images/logo.png'
 import {AiOutlineMenu} from 'react-icons/ai'
+import { AiOutlineClose } from 'react-icons/ai'
 import { menuData } from '../data/MenuData'
 import Sidebar from './Sidebar'
 import './rough.css'
 
 //styles
-const Container = styled(Link)`
+const Container = styled.section`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 75px;
+    height: 85px;
     width: 100%;
-    padding: 1rem 6rem;
+    padding: 1rem 12rem;
     z-index: 10;
     position: fixed;
     top: 0;
     background: #fff;
     border-bottom: 1px solid #ccc;
 
+    @media screen and (max-width: 1200px) {
+        padding: 1rem 10rem;
+    }
     @media screen and (max-width: 1000px) {
-        padding: 1rem 5rem;
+        padding: 1rem 8rem;
     }
 
     @media screen and (max-width: 920px) {
-        padding: 1rem 4.5rem;
+        padding: 1rem 6rem;
     }
-
-    @media screen and (max-width: 850px) {
+    @media screen and (max-width: 768px) {
+        padding: 1rem 5rem;
+    }
+    @media screen and (max-width: 600px) {
         padding: 1rem 4rem;
     }
-
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 500px) {
         padding: 1rem 3rem;
     }
 
     @media screen and (max-width: 450px) {
-        padding: 1rem 1.5rem;
+        padding: 1rem 2rem;
     }
 `
 
@@ -52,7 +57,7 @@ const Logo = styled(Link)`
     }
 `
 
-const MenuBars = styled(AiOutlineMenu)`
+const MenuIcon = styled.div`
     display: none;
 
     @media screen and (max-width: 768px) {
@@ -69,7 +74,18 @@ const MenuBars = styled(AiOutlineMenu)`
     }
 `
 
-const MenuItems = styled(Link)`
+const Bars = styled(AiOutlineMenu)`
+    width: 100%;
+    height: 100%;
+    color: #0847A8;
+`
+const Close = styled(AiOutlineClose)`
+    width: 100%;
+    height: 100%;
+    color: #0847A8;
+`
+
+const MenuItems = styled.div`
     display: flex;
     height: 100%;
 
@@ -82,13 +98,14 @@ const MenuLinks = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 20px;
+    font-size: 18px;
+    font-weight: 700;
     color: #8D8D8D;
     margin-right: 45px;
     transition: .5s;
     position: relative;
     height: 100%;
-    z-index: 11;
+    cursor: pointer;
 
     &:last-child {
         margin-right: 0;
@@ -100,21 +117,21 @@ const MenuLinks = styled.div`
 `
 
 const SubMenu = styled.div`
-    width: 170px;
+    width: auto;
     position: absolute;
     top: 0;
-    margin-top: 40px;
-    padding: 10px;
+    margin-top: 50px;
+    padding: 20px;
     display: none;
     z-index: 6;
-    background: #0847A8;
+    background: #fff;
     border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;;
 `
 
 const SubMenuLinks = styled(Link)`
-    text-align: center;
     margin-bottom: 10px;
-    color: #fff;
+    color: #8D8D8D;
     font-size: 17px;
     transition: .5s;
 
@@ -123,7 +140,7 @@ const SubMenuLinks = styled(Link)`
     }
 
     &:hover {
-        color: #FF620F;
+        color: #0847A8;
     }
 `
 
@@ -141,11 +158,11 @@ const Header = () => {
             <Logo to="/">
                 <img src={logo} alt="logo" />
             </Logo>
-            <MenuBars onClick={toggle} />
+            <MenuIcon onClick={toggle}>{isOpen ? <Close /> : <Bars />}</MenuIcon>
             <MenuItems>
                 {menuData.map((item, index) => (
                     <MenuLinks key={index} className="menu">
-                        {item.title} {item.icon}
+                        {item.title} 
                         <SubMenu className="sub-menu">
                             {item.submenu.map((item, index) => (
                                 <SubMenuLinks key={index} to={item.link}>

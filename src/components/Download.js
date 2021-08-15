@@ -12,17 +12,14 @@ const Container = styled.section`
     align-items: center;
     height: 250px;
     background-image: url(${bg});
-    padding: 1rem 6rem;
+    padding: 1rem 12rem;
     position: relative;
     
     h2 {
-        font-size: 35px;
+        font-size: 30px;
         font-weight: 700;
         color: #0847A8;
-
-        @media screen and (max-width: 350px) {
-            font-size: 30px;
-        }
+        text-align: center;
 
         @media screen and (max-width: 320px) {
             font-size: 25px;
@@ -58,24 +55,30 @@ const Container = styled.section`
         }
     }
 
+    @media screen and (max-width: 1200px) {
+        padding: 1rem 10rem;
+    }
     @media screen and (max-width: 1000px) {
-        padding: 1rem 5rem;
+        padding: 1rem 8rem;
     }
 
     @media screen and (max-width: 920px) {
-        padding: 1rem 4.5rem;
-    }
-
-    @media screen and (max-width: 850px) {
-        padding: 1rem 4rem;
+        padding: 1rem 6rem;
     }
 
     @media screen and (max-width: 768px) {
+        padding: 1rem 5rem;
+    }
+
+    @media screen and (max-width: 600px) {
+        padding: 1rem 4rem;
+    }
+    @media screen and (max-width: 500px) {
         padding: 1rem 3rem;
     }
 
     @media screen and (max-width: 450px) {
-        padding: 1rem 1.5rem;
+        padding: 1rem 2rem;
     }
 `
 

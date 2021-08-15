@@ -7,24 +7,30 @@ const Container = styled.section`
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 500px;
     grid-gap: 20px;
-    padding: 2rem 6rem 1rem 6rem;
+    padding: 2rem 12rem 1rem 12rem;
 
+    @media screen and (max-width: 1200px) {
+        padding: 2rem 10rem;
+    }
     @media screen and (max-width: 1000px) {
-        padding: 2rem 5rem;
+        padding: 2rem 8rem;
     }
 
     @media screen and (max-width: 920px) {
-        padding: 2rem 4.5rem 0rem 4.5rem;
-    }
-
-    @media screen and (max-width: 850px) {
-        padding: 2rem 4rem 0 4rem;
+        padding: 2rem 6rem 0rem 6rem;
     }
 
     @media screen and (max-width: 768px) {
-        padding: 2rem 3rem;
+        padding: 2rem 5rem;
         grid-template-columns: 1fr;
         grid-template-rows: auto 400px;
+    }
+
+    @media screen and (max-width: 600px) {
+        padding: 2rem 4rem;
+    }
+    @media screen and (max-width: 500px) {
+        padding: 2rem 3rem;
     }
 
     @media screen and (max-width: 400px) {
@@ -55,7 +61,7 @@ const Info = styled.div`
         align-items: center;
         padding: .5rem 1rem;
         font-size: 20px;
-        font-weight: 500;
+        font-weight: 700;
         background: #FF620F;
         color: #fff;
         border-radius: 10px;
@@ -63,8 +69,8 @@ const Info = styled.div`
         margin-bottom: 10px;
 
         @media screen and (max-width: 500px) {
-            font-size: 15px;
-            width: 200px;
+            font-size: 18px;
+            width: 220px;
         }
     }
 
@@ -72,20 +78,21 @@ const Info = styled.div`
         font-size: 50px;
         font-weight: 700;
         color: #0847A8;
-        margin-bottom: 20px;
+        margin-bottom: 15px;
 
         @media screen and (max-width: 500px) {
             font-size: 40px;
         }
 
-        @media screen and (max-width: 420px) {
-            font-size: 35px;
+        @media screen and (max-width: 460px) {
+            font-size: 30px;
         }
     }
 
     p {
         color: #8D8D8D;
         font-size: 20px;
+        font-weight: 700;
 
         @media screen and (max-width: 450px) {
             font-size: 18px;
