@@ -13,7 +13,7 @@ const Container = styled.div`
     position: fixed;
     top: 0;
     right: 0;
-    transition: .6s ease-in-out;
+    transition: .3s ease-in-out;
     opacity: ${({ isOpen }) => (isOpen ? '1' : '0')};
     top: ${({ isOpen }) => (isOpen ? '0' : '-100%')};
     border-bottom: 1px solid #ccc;
