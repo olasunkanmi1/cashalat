@@ -79,13 +79,9 @@ const Info = styled.div`
     }
 
     p {
-        font-size: 15px;
+        font-size: 18px;
         font-weight: 700;
         margin-bottom: 15px;
-
-        @media screen and (max-width: 450px) {
-            font-size: 15px;
-        }
     }
 `
 
