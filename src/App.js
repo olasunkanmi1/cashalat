@@ -24,11 +24,11 @@ function App() {
       <Switch>
         <Route path="/" exact component={Homepage} />
         <Route path="/company/about" exact component={Company} />
+        <Route path="/company/careers" exact component={CompanyCulture} />
         <Route path="/features/savings" exact component={FeatureSavings} />
         <Route path="/features/investments" exact component={FeatureInvestments} />
         <Route path="/features/loans" exact component={FeatureLoans} />
         <Route path="/features/payments" exact component={FeaturePayments} />
-        <Route path="/company/career" exact component={CompanyCulture} />
       </Switch>
       <Footer />
     </Router>

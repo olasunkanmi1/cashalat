@@ -8,26 +8,31 @@ const Container =  styled.section`
     display: flex;
     flex-direction: column;
     margin-top: 75px;
-    padding: 4rem 6rem;
+    padding: 4rem 12rem;
 
+    @media screen and (max-width: 1200px) {
+        padding: 4rem 10rem;
+    }
     @media screen and (max-width: 1000px) {
-        padding: 4rem 5rem;
+        padding: 4rem 8rem;
     }
 
     @media screen and (max-width: 920px) {
-        padding: 4rem 4.5rem;
+        padding: 4rem 6rem;
     }
-
-    @media screen and (max-width: 850px) {
-        padding: 4rem 4rem;
-    }
-
     @media screen and (max-width: 768px) {
+        padding: 3rem 5rem 0 5rem;
+    }
+
+    @media screen and (max-width: 600px) {
+        padding: 3rem 4rem 0 4rem;
+    }
+    @media screen and (max-width: 500px) {
         padding: 3rem 3rem 0 3rem;
     }
 
     @media screen and (max-width: 450px) {
-        padding: 2rem 1.5rem 0 1.5rem;
+        padding: 2rem 3rem 0 2rem;
     }
 `
 
@@ -36,22 +41,22 @@ const Head = styled.div`
     justify-content: center;
 
     h2 {
-        font-size: 40px;
+        font-size: 35px;
         font-weight: 700;
         color: #0847A8;
-        width: 49%;
+        width: 55%;
         text-align: center;
         margin-bottom: 2rem;
 
-        @media screen and (max-width: 1370px) {
+        @media screen and (max-width: 1390px) {
             width: 60%;
         }
         
-        @media screen and (max-width: 1160px) {
+        @media screen and (max-width: 1315px) {
             width: 70%;
         }
         
-        @media screen and (max-width: 1100px) {
+        @media screen and (max-width: 1115px) {
             width: 90%;
         }
         
@@ -60,21 +65,18 @@ const Head = styled.div`
         }
         
         @media screen and (max-width: 730px) {
-            font-size: 35px;
+            font-size: 30px;
         }
     }
 `
 
 const Vis = styled.div`
     display: grid;
-    grid-template-columns: .8fr .2fr;
-    grid-template-rows: 600px;
+    grid-template-columns: .7fr .3fr;
+    grid-template-rows: 400px;
 
     @media screen and (max-width: 1400px) {
-        grid-template-rows: 500px;
-    }
-    @media screen and (max-width: 1150px) {
-        grid-template-rows: 400px;
+        grid-template-rows: 300px;
     }
     @media screen and (max-width: 1100px) {
         display: flex;
@@ -97,7 +99,7 @@ const Image1 = styled.div`
     }
 
     @media screen and (max-width: 1100px) {
-        height: 400px;
+        height: 300px;
     }
 
     @media screen and (max-width: 768px) {
@@ -114,20 +116,15 @@ const Info1 = styled.div`
     flex-direction: column;
     align-items: flex-end;
     grid-column: 2 / 3;
-    padding: 10rem 2rem;
+    padding: 5rem 2rem;
 
     @media screen and (max-width: 1670px) {
-        padding: 10rem 1rem;
+        padding: 5rem 1rem;
     }
     
     @media screen and (max-width: 1150px) {
         padding: 3rem 1rem;
     }
-    
-    @media screen and (max-width: 1100px) {
-        padding: 8rem 1rem;
-    }
-
     
     @media screen and (max-width: 768px) {
         padding: 0;
@@ -156,6 +153,7 @@ const Info1 = styled.div`
     p {
         color: #8D8D8D;
         font-size: 20px;
+        font-weight: 700;
 
         @media screen and (max-width: 500px) {
             font-size: 18px;
@@ -174,8 +172,10 @@ const Mis = styled.div`
         height: 400px;
     }
     
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 650px) {
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
         height: auto;
     }
 `
@@ -184,7 +184,7 @@ const Info2 = styled.div`
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 5rem 0rem 0 20rem;
+    padding: 2rem 0rem 0 20rem;
     width: 50%;
 
     div {
@@ -209,6 +209,7 @@ const Info2 = styled.div`
     p {
         color: #8D8D8D;
         font-size: 20px;
+        font-weight: 700;
 
         @media screen and (max-width: 500px) {
             font-size: 18px;
@@ -216,30 +217,26 @@ const Info2 = styled.div`
     }
 
     @media screen and (max-width: 1700px) {
-        padding: 5rem 0rem 0 15rem;
+        padding: 2rem 0rem 0 15rem;
     }
     @media screen and (max-width: 1600px) {
-        padding: 5rem 0rem 0 10rem;
+        padding: 2rem 0rem 0 10rem;
     }
     @media screen and (max-width: 1360px) {
-        padding: 3rem 0rem 0 7rem;
+        padding: 2rem 0rem 0 7rem;
     }
     @media screen and (max-width: 1150px) {
-        padding: 1rem 0rem 0 5rem;
+        padding: 1rem 0rem 0 3rem;
     }
-    @media screen and (max-width: 960px) {
-        padding: 1rem 0rem 0 2rem;
-        width: 40%;
+    @media screen and (max-width: 1110px) {
+        padding: 1rem 0rem 0 0rem;
     }
 
     @media screen and (max-width: 768px) {
-        padding: 8rem 0;
-    }
-    @media screen and (max-width: 695px) {
-        padding: 5rem 0;
+        padding: 6rem 0;
     }
 
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 650px) {
         order: 2;
         padding: 0;
         width: 100%;
@@ -247,26 +244,35 @@ const Info2 = styled.div`
 `
 
 const Image2 = styled.div`
-    width: 600px;
-    height: 600px;
+    width: 400px;
+    height: 400px;
     position: absolute;
     top: -200px;
-    right: 0;
+    right: 250px;
 
+    @media screen and (max-width: 1800px) {
+        right: 150px;
+    }
+    @media screen and (max-width: 1600px) {
+        right: 50px;
+    }
     @media screen and (max-width: 1400px) {
-        width: 500px;
-        height: 500px;
-    }
-    @media screen and (max-width: 1150px) {
-        width: 400px;
-        height: 400px;
-    }
-    @media screen and (max-width: 1100px) {
+        width: 300px;
+        height: 300px;
         top: -100px;
     }
 
+    @media screen and (max-width: 1100px) {
+        top: -150px;
+    }
+    @media screen and (max-width: 870px) {
+        right: 0;
+    }
+
     @media screen and (max-width: 768px) {
-        position: initial
+        position: initial;
+        height: 400px;
+        width: 400px;
     }
 
     img {
@@ -276,11 +282,7 @@ const Image2 = styled.div`
         object-fit: contain;
     }
 
-    @media screen and (max-width: 700px) {
-       position: initial;
-    }
-
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 650px) {
         height: 300px;
         width: 100%;
         border-radius: 70px;
