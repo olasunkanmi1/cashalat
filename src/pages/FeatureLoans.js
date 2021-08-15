@@ -7,31 +7,38 @@ const Container = styled.section`
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 4rem 6rem;
+    padding: 4rem 12rem;
     margin-top: 75px;
 
+    @media screen and (max-width: 1200px) {
+        padding: 4rem 10rem;
+    }
+
     @media screen and (max-width: 1000px) {
-        padding: 4rem 5rem;
+        padding: 4rem 8rem;
     }
 
     @media screen and (max-width: 920px) {
-        padding: 4rem 4.5rem;
-    }
-
-    @media screen and (max-width: 850px) {
-        padding: 4rem 4rem;
+        padding: 4rem 6rem;
     }
 
     @media screen and (max-width: 768px) {
+        padding: 4rem 5rem;
+    }
+
+    @media screen and (max-width: 600px) {
+        padding: 4rem 4rem;
+    }
+    @media screen and (max-width: 500px) {
         padding: 4rem 3rem;
     }
 
     @media screen and (max-width: 450px) {
-        padding: 4rem 1.5rem;
+        padding: 4rem 2rem;
     }
 
     h1 {
-        font-size: 70px;
+        font-size: 50px;
         color: #0847A8;
         text-align: center;
         width: 40%;
@@ -48,21 +55,19 @@ const Container = styled.section`
         @media screen and (max-width: 1100px) {
             width: 80%;
         }
-        @media screen and (max-width: 1050px) {
-            font-size: 60px;
-        }
+
         @media screen and (max-width: 810px) {
             width: 90%;
         }
         @media screen and (max-width: 768px) {
-            font-size: 50px;
+            font-size: 40px;
             width: 80%;
         }
         @media screen and (max-width: 660px) {
             width: 90%;
         }
         @media screen and (max-width: 620px) {
-            font-size: 40px;
+            font-size: 30px;
         }
         @media screen and (max-width: 500px) {
             width: 100%;
@@ -70,23 +75,20 @@ const Container = styled.section`
     }
     
     h2 {
-        font-size: 70px;
+        font-size: 50px;
         color: #FF620F;
         text-align: center;
 
-        @media screen and (max-width: 1050px) {
-            font-size: 60px;
-        }
         @media screen and (max-width: 768px) {
-            font-size: 50px;
+            font-size: 40px;
         }
         @media screen and (max-width: 620px) {
-            font-size: 40px;
+            font-size: 30px;
         }
     }
 
     img {
-        padding: 6rem 0;
+        padding: 4rem 0;
         width: 50%;
 
         @media screen and (max-width: 1630px) {
