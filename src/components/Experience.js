@@ -51,6 +51,10 @@ const Wrapper = styled.div`
         @media screen and (max-width: 960px) {
             grid-gap: 30px;
         }
+        
+        @media screen and (max-width: 800px) {
+            grid-template-columns: .55fr .44fr;
+        }
         @media screen and (max-width: 768px) {
             grid-template-columns: 1fr;
             grid-template-rows: auto auto;

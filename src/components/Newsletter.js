@@ -13,7 +13,7 @@ const Container = styled.section`
     width: 100%;
 `
 
-const Input = styled.div`
+const Input = styled.section`
     display: flex;
     height: 40px;
     justify-content: space-between;

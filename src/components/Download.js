@@ -1,18 +1,17 @@
 import React from 'react'
 import styled, {css} from 'styled-components/macro'
 import Newsletter from './Newsletter'
-import playstore from '../images/playstore.png'
-import applestore from '../images/applestore.png'
 import bg from '../images/bg.png'
+import PlaystoreApple from './PlaystoreApple'
 
 //styles
 const Container = styled.section`
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 250px;
+    height: auto;
     background-image: url(${bg});
-    padding: 1rem 12rem;
+    padding: 7rem 12rem 19rem 12rem;
     position: relative;
     
     h2 {
@@ -40,19 +39,7 @@ const Container = styled.section`
         display: flex;
         align-items: center;
         justify-content: space-between;
-        height: 50px;
-        margin: 1rem 0;
-
-        img {
-            height: 40px;
-
-            @media screen and (max-width: 350px) {
-                height: 35px;
-            }
-            @media screen and (max-width: 300px) {
-                height: 30px;
-            }
-        }
+        margin: 1rem 0 10rem 0;
     }
 
     @media screen and (max-width: 1200px) {
@@ -88,14 +75,10 @@ const Download = () => {
                 <h2>Get the free App</h2>
                 <h3>Your best financial life starts here.</h3>
                 <div>
-                    <img src={playstore} alt="playstore" css={`margin-right: 30px;
-                    @media screen and (max-width: 350px) {
-                        margin-right: 20px;
-                    }`} />
-                    <img src={applestore} alt="applestore" />
+                    <PlaystoreApple />
                 </div>
                 <div css={`
-                            width: 30%; height: 10px; position: absolute; bottom: -30px;
+                            width: 30%; height: 10px; position: absolute; bottom: -100px;
                             @media screen and (max-width:1400px) {
                                 width: 35%;
                             }
