@@ -166,9 +166,8 @@ const Footer = () => {
                 </div>
             </Wrapper>
             <Cr>
-                <p>&copy; 2021 Cashalat is a property of Cashalat Global Technology Limited, a company duly registered with CAC. Cashalat provides financial services under a Cooperative License. Both Cashalat Coop and Cashalat Global Technology Limited are legal entities in Nigeria. We are partnering with National Microfinance Bank using their license.</p>
+                <p>&copy; 2021 Cashalat is a property of CAPITALBRIDGE Financial Services Limited, both Cashalat Co-op, and CAPITALBRIDGE Financial Services Limited are legal entities in Nigeria. We are partnering with a Microfinance Bank, operating with their license</p>
                 <p>All saved funds are warehoused with and managed by Stanbic IBTC Assets, the leading asset management company in Nigeria, registered and licensed by the Securities and Exchange Commission (SEC) </p>
-                <p>Registered Address: Plot 1 Prince Adeyinka Avenue, off Ozumba Mbadiwe, Victoria Island, Lagos.</p>
             </Cr>
         </Container>
         </>

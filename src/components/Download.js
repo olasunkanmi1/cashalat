@@ -11,7 +11,7 @@ const Container = styled.section`
     align-items: center;
     height: auto;
     background-image: url(${bg});
-    padding: 7rem 12rem 19rem 12rem;
+    padding: 4rem 12rem 5rem 12rem;
     position: relative;
     
     h2 {
@@ -39,7 +39,24 @@ const Container = styled.section`
         display: flex;
         align-items: center;
         justify-content: space-between;
-        margin: 1rem 0 10rem 0;
+        width: 20%;
+        margin: 1rem 0 3rem 0;
+
+        @media screen and (max-width: 1850px) {
+            width: 30%;
+        }
+        @media screen and (max-width: 1400px) {
+            width: 40%;
+        }
+        @media screen and (max-width: 1055px) {
+            width: 60%;
+        }
+        @media screen and (max-width: 660px) {
+            width: 80%;
+        }
+        @media screen and (max-width: 500px) {
+            width: 100%;
+        }
     }
 
     @media screen and (max-width: 1200px) {
@@ -77,8 +94,8 @@ const Download = () => {
                 <div>
                     <PlaystoreApple />
                 </div>
-                <div css={`
-                            width: 30%; height: 10px; position: absolute; bottom: -100px;
+                <form css={`
+                            width: 30%; height: 10px; position: absolute; bottom: 40px;
                             @media screen and (max-width:1400px) {
                                 width: 35%;
                             }
@@ -102,7 +119,7 @@ const Download = () => {
                             }
                         `}>
                     <Newsletter />
-                </div>
+                </form>
                
         </Container>
     )

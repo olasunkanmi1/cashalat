@@ -13,7 +13,7 @@ const Container = styled.section`
     width: 100%;
 `
 
-const Input = styled.section`
+const Input = styled.form`
     display: flex;
     height: 40px;
     justify-content: space-between;
@@ -31,8 +31,8 @@ const Input = styled.section`
         border: none;
         font-size: 15px;
 
-        @media screen and (max-width:350px) {
-            width: 50%;
+        @media screen and (max-width: 300px) {
+            font-size: 13px;
         }
     }
 
@@ -43,23 +43,42 @@ const Input = styled.section`
         background: #FF620F;
         color: #fff;
         border-radius: 10px;
-        width: 30%;
+        width: 40%;
         height: 100%;
         outline: none;
         border: none;
+        padding: 10px;
         cursor: pointer;
         font-size: 15px;
 
-        @media screen and (max-width: 1000px) {
-            width: 40%;
-        }
-
-        @media screen and (max-width:390px) {
+        @media screen and (max-width: 1105px) {
             font-size: 13px;
         }
-        
-        @media screen and (max-width:350px) {
+        @media screen and (max-width: 1050px) {
             width: 50%;
+        }
+        @media screen and (max-width: 820px) {
+            width: 55%;
+        }
+        @media screen and (max-width: 768px) {
+            width: 30%;
+            font-size: 15px;
+        }
+        @media screen and (max-width: 570px) {
+            width: 40%;
+        }
+        @media screen and (max-width: 465px) {
+            width: 50%;
+        }
+        @media screen and (max-width: 375px) {
+            width: 60%;
+            font-size: 13px;
+        }
+        @media screen and (max-width: 330px) {
+            width: 80%;
+        }
+        @media screen and (max-width: 300px) {
+            width: 100%;
         }
     }
 `
@@ -81,7 +100,7 @@ const Newsletter = () => {
         <Container>
             <h5>sign up for our newsletter</h5>
             <Input>
-                <input type="email" placeholder="your email" />
+                <input type="email" placeholder="your email" required />
                 <button type="submit">Get Started <Arr /></button>
             </Input>
         </Container>

@@ -23,23 +23,53 @@ const style = css`
         font-size: 13px;
          font-weight: 700;
     }
+
+    @media screen and (max-width: 350px) {
+        width: 120px;
+        height: 40px;
+
+        h5 {
+            font-size: 7px; 
+        }
+    
+        h4 {
+            font-size: 10px;
+             font-weight: 700;
+        }
+    }
+
+    @media screen and (max-width: 320px) {
+        grid-template-columns: .1fr .9fr;
+        width: 100px;
+    }
 ` 
+
 const PlayStore = styled(Link)`
     ${style};
 
     img {
         width: 25px;
         height: 25px;
+        margin-left: 5px;
+
+        @media screen and (max-width: 320px) {
+            width: 15px;
+            height: 15px;
+        }
     }
 `
 
 const AppleStore = styled(Link)`
     ${style};
-
     
     img {
         width: 30px;
         height: 30px;
+
+        @media screen and (max-width: 320px) {
+            width: 20px;
+            height: 20px;
+        }
     }
 `
 
