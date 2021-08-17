@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 
 //components
 import Newsletter from './Newsletter'
+import PlaystoreApple from './PlaystoreApple'
 
 //styles
 const Container = styled.section`
@@ -89,18 +90,6 @@ const Download = styled .div`
     display: flex;
     justify-content: space-between;
     margin-bottom: 15px;
-
-    img {
-        height: 40px;
-
-        @media screen and (max-width: 360px) {
-            height: 35px;
-        }
-        
-        @media screen and (max-width: 320px) {
-            height: 30px;
-        }
-    }
 `
 
 const Image = styled.div`
@@ -130,8 +119,7 @@ const GetStarted = ({ heading, paragraph, playstore, applestore, image }) => {
                 <h1>{heading}</h1>
                 <p>{paragraph}</p>
                 <Download>
-                    <Link to="/"><img src={playstore} alt="playstore" /></Link>
-                    <Link to="/"><img src={applestore} alt="applestore" /></Link>
+                    <PlaystoreApple />
                 </Download>
                 <Newsletter />
             </Info>
