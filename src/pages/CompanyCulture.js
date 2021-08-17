@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 
 //components
-// import Careers from '../components/Careers'
+import Careers from '../components/Careers'
 import Culture from '../components/Culture'
 
 
@@ -13,7 +13,7 @@ const CompanyCulture = () => {
 
     return (
         <>
-            {/* <Careers /> */}
+            <Careers />
             <Culture />
         </>
     )
