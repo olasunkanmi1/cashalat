@@ -10,11 +10,9 @@ const Container = styled.section`
     padding: 4rem 12rem;
 
     @media screen and (max-width: 1500px) {
-        grid-template-rows: 500px;
-    }
-    @media screen and (max-width: 1300px) {
         grid-template-rows: 450px;
     }
+    
     @media screen and (max-width: 1200px) {
         padding: 4rem 10rem;
     }
