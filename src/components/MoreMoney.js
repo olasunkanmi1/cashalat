@@ -48,21 +48,8 @@ const Container = styled.section`
 const Info = styled.div`
         display: flex;
         flex-direction: column;
-        padding: 9rem 0;
+        justify-content: space-around;
 
-        @media screen and (max-width: 1590px) {
-            padding: 7rem 0;
-        }
-        
-        @media screen and (max-width: 1550px) {
-            padding: 5rem 0;
-        }
-        @media screen and (max-width: 1090px) {
-            padding: 3rem 0;
-        }
-        @media screen and (max-width: 768px) {
-            padding: 0;
-        }
 
         h2 {
             font-size: 50px;
@@ -80,12 +67,17 @@ const Info = styled.div`
 
         p {
             width: 75%;
-            font-size: 20px;
+            font-size: 18px;
 
             @media screen and (max-width: 768px) {
                 width: 100%;
             }
         }
+`
+
+const Wrap = styled.section`
+    display: flex;
+    flex-direction: column;
 `
 
 const Image = styled.div`
@@ -120,8 +112,10 @@ const MoreMoney = () => {
     return (
         <Container>
             <Info>
-                <h2>investments beget more money in your account.</h2>
-                <p>With the least naira amount, a meagre cash Investment, gives you mouth watery returns.</p>
+                <Wrap>
+                    <h2>investments beget more money in your account.</h2>
+                    <p>With the least naira amount, a meagre cash Investment, gives you mouth watery returns.</p>
+                </Wrap>
             </Info>
             <Image>
                 <img src={image} alt="img" />

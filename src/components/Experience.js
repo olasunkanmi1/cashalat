@@ -79,8 +79,8 @@ const Info = styled.div`
     }
 
     p {
-        font-size: 18px;
-        font-weight: 700;
+        font-size: 17px;
+        font-weight: 500;
         margin-bottom: 15px;
     }
 `

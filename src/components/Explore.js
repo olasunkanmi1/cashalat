@@ -8,7 +8,7 @@ const Container = styled.section`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 75px;
+    margin-top: 90px;
     padding: 4rem 12rem 0 12rem;
     position: relative;
 
@@ -43,20 +43,12 @@ const Container = styled.section`
         flex-direction: column;
         align-items: center;
         width: 100%;
-        margin-bottom: 550px;
-
-        @media screen and (max-width: 670px) {
-            margin-bottom: 450px;
-        }
+        margin-bottom: 400px;
 
         @media screen and (max-width: 535px) {
-            margin-bottom: 350px;
-        }
-        @media screen and (max-width: 400px) {
             margin-bottom: 250px;
         }
-
-        @media screen and (max-width: 350px) {
+        @media screen and (max-width: 400px) {
             margin-bottom: 150px;
         }
 
@@ -107,26 +99,17 @@ const Container = styled.section`
 `
 
 const Image = styled.div`
-    height: 650px;
+    height: 500px;
     position: absolute;
-    bottom: -700px;
-
-    @media screen and (max-width: 670px) {
-        height: 550px;
-        bottom: -600px;
-    }
+    bottom: -500px;
 
     @media screen and (max-width: 535px) {
-        height: 450px;
-        bottom: -500px;
+        height: 350px;
+        bottom: -370px;
     }
 
     @media screen and (max-width: 400px) {
-        height: 350px;
-        bottom: -400px;
-    }
-    @media screen and (max-width: 350px) {
-        height: 250px;
+        height: 300px;
         bottom: -300px;
     }
 

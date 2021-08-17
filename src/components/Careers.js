@@ -63,7 +63,7 @@ const Wrapper = styled.div`
 
 const Info = styled.div`
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-direction: column;
     width: 50%;
 
@@ -80,11 +80,13 @@ const Info = styled.div`
 
     p {
         font-size: 18px;
-
-        @media screen and (max-width: 1000px) {
-            margin-bottom: 15px;
-        }
+        margin-bottom: 15px;
     }
+`
+
+const Wrap = styled.section`
+    display: flex;
+    flex-direction: column;
 `
 
 const Image = styled.div`
@@ -133,10 +135,12 @@ const Careers = () => {
             <h1>Careers</h1>
             <Wrapper>
                 <Info>
-                    <p>We started Cashalat because we believe everyone should have the opportunity to save and invest, conduct other financial transactions on their mobile phones conveniently. </p>
-                    <p>We’re a unique team of experienced entrepreneurs, developers, designers, investment experts and marketers with a successful track record in building complex businesses.</p>
-                    <p>Inspired by our vision and shared purpose, we provide opportunities and a great work environment because we believe everyone should have a decent shot at life and plan for their future.</p>
-                    <p>At Cashalat, we are people from different backgrounds and cultures from all over Africa and the world! From financial, data analyst and to techies, we’re all on this exciting journey together.</p>
+                    <Wrap>
+                        <p>We started Cashalat because we believe everyone should have the opportunity to save and invest, conduct other financial transactions on their mobile phones conveniently. </p>
+                        <p>We’re a unique team of experienced entrepreneurs, developers, designers, investment experts and marketers with a successful track record in building complex businesses.</p>
+                        <p>Inspired by our vision and shared purpose, we provide opportunities and a great work environment because we believe everyone should have a decent shot at life and plan for their future.</p>
+                        <p>At Cashalat, we are people from different backgrounds and cultures from all over Africa and the world! From financial, data analyst and to techies, we’re all on this exciting journey together.</p>
+                    </Wrap>
                 </Info>
                 <Image>
                     <img src={image} alt="career" />

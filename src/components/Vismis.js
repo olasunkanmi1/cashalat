@@ -152,11 +152,11 @@ const Info1 = styled.div`
 
     p {
         color: #8D8D8D;
-        font-size: 20px;
-        font-weight: 700;
+        font-size: 18px;
+        font-weight: 500;
 
         @media screen and (max-width: 500px) {
-            font-size: 18px;
+            font-size: 15px;
         }
     }
 `
@@ -208,11 +208,11 @@ const Info2 = styled.div`
 
     p {
         color: #8D8D8D;
-        font-size: 20px;
-        font-weight: 700;
+        font-size: 18px;
+        font-weight: 500;
 
         @media screen and (max-width: 500px) {
-            font-size: 18px;
+            font-size: 15px;
         }
     }
 

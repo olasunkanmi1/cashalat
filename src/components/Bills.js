@@ -6,43 +6,50 @@ import image from '../images/payment1.png'
 const Container = styled.section`
     display: grid;
     grid-template-columns: .40fr .60fr;
-    grid-template-rows: 700px;
-    grid-gap: 50px;
+    grid-template-rows: 500px;
     margin-top: 75px;
-    padding: 4rem 0 2rem 6rem;
+    padding: 4rem 0 2rem 12rem;
 
-    @media screen and (max-width: 1580px) {
-        grid-gap: 20px;
-    }
     @media screen and (max-width: 1400px) {
-        grid-template-rows: 600px;
+        grid-template-rows: 450px;
+    }
+
+    @media screen and (max-width: 1200px) {
+        padding: 4rem 0 2rem 10rem;
     }
     @media screen and (max-width: 1105px) {
-        grid-template-rows: 500px;
+        grid-template-rows: 400px;
     }
     @media screen and (max-width: 1000px) {
         padding: 4rem  0 4rem 5rem;
     }
 
     @media screen and (max-width: 920px) {
-        padding: 4rem 0rem 4rem 4.5rem;
-        grid-template-columns: .30fr .70fr;
-    }
-    @media screen and (max-width: 930px) {
-        grid-template-rows: 400px;
-    }
-
-    @media screen and (max-width: 850px) {
-        padding: 4rem 0rem 4rem 4rem;
+        padding: 4rem 0rem 4rem 6rem;
     }
 
     @media screen and (max-width: 768px) {
-        padding: 4rem 3rem 0rem 3rem;
+        padding: 4rem 5rem 0rem 5rem;
         grid-template-columns: 1fr;
+        grid-template-rows: auto 500px;
+    }
+
+    @media screen and (max-width: 650px) {
+        grid-template-rows: auto 450px;
+    }
+    @media screen and (max-width: 600px) {
+        padding: 4rem 4rem 0rem 4rem;
+    }
+
+    @media screen and (max-width: 550px) {
         grid-template-rows: auto 400px;
     }
+
+    @media screen and (max-width: 500px) {
+        padding: 4rem 3rem 0rem 3rem;
+    }
     @media screen and (max-width: 450px) {
-        padding: 4rem 1.5rem 0rem 1.5rem;
+        padding: 4rem 2rem 0rem 2rem;
         grid-template-rows: auto 350px;
     }
     @media screen and (max-width: 370px) {
@@ -53,74 +60,62 @@ const Container = styled.section`
 const Info = styled.div`
         display: flex;
         flex-direction: column;
-        padding: 13rem 0;
-
-        @media screen and (max-width: 1300px) {
-            padding: 11rem 0;
-        }
-        
-        @media screen and (max-width: 1170px) {
-            padding: 9rem 0;
-        }
-
-        @media screen and (max-width: 1105px) {
-            padding: 4rem 0;
-        }
-        @media screen and (max-width: 960px) {
-            padding: 2rem 0;
-        }
-        @media screen and (max-width: 768px) {
-            padding: 0 0;
-        }
+        justify-content: space-around;
 
         h2 {
-            font-size: 70px;
+            font-size: 50px;
             color: #0847A8;
             margin-bottom: 15px;
             
-            @media screen and (max-width: 1690px) {
-                font-size: 60px;
-            }
-
-            @media screen and (max-width: 860px) {
-                font-size: 50px;
-            }
-            
-            @media screen and (max-width: 580px) {
+            @media screen and (max-width: 925px) {
                 font-size: 40px;
+            }
+    
+            @media screen and (max-width: 460px) {
+                font-size: 30px;
             }
         }
 
         p {
             width: 75%;
-            font-size: 20px;
+            font-size: 18px;
 
             @media screen and (max-width: 768px) {
                 width: 100%;
             }
+            @media screen and (max-width: 500px) {
+                font-size: 15px;
+            }
         }
 `
 
+const Wrap = styled.section`
+    display: flex;
+    flex-direction: column;
+`
+
 const Image = styled.div`
-    @media screen and (max-width: 768px) {
-        border-radius: 40px;
-        overflow: hidden;
-    }
+        padding-left: 8rem;
+
+        @media screen and (max-width: 1300px) {
+            padding-left: 4rem;
+        }
+        
+        @media screen and (max-width: 950px) {
+            padding-left: 1rem;
+        }
+
+        @media screen and (max-width: 768px) {
+            border-radius: 40px;
+            padding-left: 0rem;
+            overflow: hidden;
+            margin-top: 1rem;
+        }
     img {
         width: 100%;
         height: 100%;
         object-fit: cover:
         border-radius:  40px;
-        
-        @media screen and (max-width: 1107px) {
-            width: 170%;
-        }
-        @media screen and (max-width: 925px) {
-            width: 160%;
-        }
-        @media screen and (max-width: 768px) {
-            width: 100%;
-        }
     }
 `
 
@@ -128,8 +123,10 @@ const Bills = () => {
     return (
         <Container>
             <Info>
-                <h2>pay your bills conveniently and fast</h2>
-                <p>With Cashalat, you get to pay your utilities.</p>
+                <Wrap>
+                    <h2>pay your bills conveniently and fast</h2>
+                    <p>With Cashalat, you get to pay your utilities.</p>
+                </Wrap>
             </Info>
             <Image>
                 <img src={image} alt="img" />

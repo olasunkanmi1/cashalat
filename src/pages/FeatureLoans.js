@@ -115,7 +115,7 @@ const Container = styled.section`
 
     p {
         width: 50%;
-        font-size: 20px;
+        font-size: 18px;
         text-align: center;
 
         @media screen and (max-width: 1790px) {
@@ -129,6 +129,9 @@ const Container = styled.section`
         }
         @media screen and (max-width: 1190px) {
             width: 100%;
+        }
+        @media screen and (max-width: 500px) {
+            font-size: 15px;
         }
     }
 `

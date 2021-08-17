@@ -5,7 +5,7 @@ import styled from 'styled-components'
 const Container = styled.div`
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: space-around;
     padding: 5rem 12rem 4rem 12rem;
     background: #E5F9FF;
 
@@ -36,7 +36,7 @@ const Container = styled.div`
     }
 
     h1 {
-        margin-bottom: 3rem;
+        margin-bottom: 2rem;
         text-align: center;
         width: 45%;
         font-size: 50px;
@@ -77,7 +77,7 @@ const Container = styled.div`
     p {
         width: 60%;
         text-align: center;
-        font-size: 20px;
+        font-size: 18px;
 
         @media screen and (max-width: 1155px) {
             width: 80%;
@@ -88,11 +88,19 @@ const Container = styled.div`
     }
 `
 
+const Wrap = styled.section`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+`
+
 const Barriers = () => {
     return (
         <Container>
-            <h1>investments barriers are challenged</h1>
-            <p>Our goal is to ensure no one is left behind. In our quest to create wealth for all, we have made it easy for even the poorest amongst us to invest and enjoy profits.</p>
+            <Wrap>
+                <h1>investments barriers are challenged</h1>
+                <p>Our goal is to ensure no one is left behind. In our quest to create wealth for all, we have made it easy for even the poorest amongst us to invest and enjoy profits.</p>
+            </Wrap>
         </Container>
     )
 }

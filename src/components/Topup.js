@@ -7,7 +7,7 @@ const Container = styled.section`
     display: grid;
     grid-template-columns: .50fr .50fr;
     grid-template-rows: 600px;
-    padding: 4rem 6rem;
+    padding: 4rem 12rem;
 
     @media screen and (max-width: 1500px) {
         grid-template-rows: 500px;
@@ -15,38 +15,45 @@ const Container = styled.section`
     @media screen and (max-width: 1300px) {
         grid-template-rows: 450px;
     }
+    @media screen and (max-width: 1200px) {
+        padding: 4rem 10rem;
+    }
     @media screen and (max-width: 1100px) {
         grid-template-rows: 400px;
-        padding: 4rem 5rem;
     }
     @media screen and (max-width: 1000px) {
         grid-template-columns: .60fr .40fr;
+        padding: 4rem 8rem;
+    }
+
+    @media screen and (max-width: 955px) {
+        grid-template-rows: 350px;
     }
 
     @media screen and (max-width: 920px) {
-        padding: 4rem 4.5rem;
-    }
-
-    @media screen and (max-width: 850px) {
-        padding: 4rem 4rem;
+        padding: 4rem 6rem;
     }
 
     @media screen and (max-width: 830px) {
         grid-template-columns: .50fr .50fr;
-        grid-template-rows: 350px;
     }
 
     @media screen and (max-width: 768px) {
-        padding: 2rem 3rem;
+        padding: 2rem 5rem;
         grid-template-columns: 1fr;
         grid-template-rows: auto 400px;
         grid-gap: 20px;
     }
+
+    @media screen and (max-width: 600px) {
+        padding: 2rem 4rem;
+    }
     @media screen and (max-width: 500px) {
         grid-template-rows: auto 350px;
+        padding: 2rem 3rem;
     }
     @media screen and (max-width: 450px) {
-        padding: 2rem 1.5rem;
+        padding: 2rem 2rem;
     }
 
     @media screen and (max-width: 390px) {
@@ -60,56 +67,50 @@ const Container = styled.section`
 const Info = styled.div`
         display: flex;
         flex-direction: column;
-        padding: 14rem 0 14rem 8rem;
+        justify-content: space-around;
+        padding-left: 8rem;
 
-        @media screen and (max-width: 1500px) {
-            padding: 9rem 0 9rem 8rem;
-        }
         @media screen and (max-width: 1400px) {
-            padding: 9rem 0 9rem 2rem;
+            padding-left: 2rem;
         }
         @media screen and (max-width: 1210px) {
-            padding: 7rem 0 7rem 1rem;
-        }
-        @media screen and (max-width: 1175px) {
-            padding: 5rem 0 5rem 1rem;
-        }
-        @media screen and (max-width: 840px) {
-            padding: 2rem 0 2rem 1rem;
+            padding-left: 1rem;
         }
         @media screen and (max-width: 768px) {
             padding: 0;
         }
 
         h2 {
-            font-size: 70px;
+            font-size: 50px;
             color: #0847A8;
             margin-bottom: 15px;
             
-            @media screen and (max-width: 1690px) {
-                font-size: 60px;
-            }
-            @media screen and (max-width: 1000px) {
-                font-size: 55px;
-            }
-
-            @media screen and (max-width: 910px) {
-                font-size: 50px;
-            }
-            
-            @media screen and (max-width: 580px) {
+            @media screen and (max-width: 955px) {
                 font-size: 40px;
+            }
+    
+            @media screen and (max-width: 460px) {
+                font-size: 30px;
             }
         }
 
         p {
-            font-size: 20px;
+            font-size: 18px;
             width: 75%;
 
             @media screen and (max-width: 768px) {
                 width: 100%;
             }
+
+            @media screen and (max-width: 500px) {
+                font-size: 15px;
+            }
         }
+`
+
+const Wrap = styled.section`
+    display: flex;
+    flex-direction: column;
 `
 
 const Image = styled.div`
@@ -130,8 +131,10 @@ const Topup = () => {
                 <img src={image} alt="img" />
             </Image>
             <Info>
+                <Wrap>
                 <h2>top up anytime anywhere.</h2>
                 <p>Buy airtime and mobile data, while tracking your expenditures.</p>
+                </Wrap>
             </Info>
         </Container>
     )

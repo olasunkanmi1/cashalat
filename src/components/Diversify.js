@@ -56,7 +56,7 @@ const Image = styled.div`
 const Info = styled.div`
     display: flex;
     flex-direction: column;
-    padding: 8rem 0;
+    justify-content: space-around;
 
     div {
         display: flex;
@@ -94,25 +94,18 @@ const Info = styled.div`
 
     p {
         color: #8D8D8D;
-        font-size: 20px;
-        font-weight: 700;
+        font-size: 18px;
+        font-weight: 500;
 
         @media screen and (max-width: 450px) {
-            font-size: 18px;
+            font-size: 15px;
         }
     }
+`
 
-    @media screen and (max-width: 1410px) {
-        padding: 5rem 0;
-    }
-    
-    @media screen and (max-width: 1150px) {
-        padding: 3rem 0;
-    }
-    
-    @media screen and (max-width: 900px) {
-        padding: 0;
-    }
+const Wrap = styled.section`
+    display: flex;
+    flex-direction: column;
 `
 
 const Diversify = ({ top, heading, paragraph, image }) => {
@@ -122,9 +115,11 @@ const Diversify = ({ top, heading, paragraph, image }) => {
                 <img src={image} alt="img" />
             </Image>
             <Info>
-                <div>{top}</div>
-                <h2>{heading}</h2>
-                <p>{paragraph}</p>
+                <Wrap>
+                    <div>{top}</div>
+                    <h2>{heading}</h2>
+                    <p>{paragraph}</p>
+                </Wrap>
             </Info>
         </Container>
     )

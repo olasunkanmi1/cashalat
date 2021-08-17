@@ -56,23 +56,17 @@ const Container = styled.section`
 const Info = styled.div`
         display: flex;
         flex-direction: column;
-        padding: 10rem 0 10rem 8rem;
+        justify-content: space-around;
+        padding-left: 8rem;
 
-        @media screen and (max-width: 1500px) {
-            padding: 9rem 0 9rem 8rem;
-        }
         @media screen and (max-width: 1360px) {
-            padding: 9rem 0 9rem 5rem;
+            padding-left: 5rem;
         }
+
         @media screen and (max-width: 1270px) {
-            padding: 9rem 0 9rem 2rem;
+            padding-left: 2rem;
         }
-        @media screen and (max-width: 1200px) {
-            padding: 5rem 0 5rem 2rem;
-        }
-        @media screen and (max-width: 1040px) {
-            padding: 3rem 0 3rem 2rem;
-        }
+
         @media screen and (max-width: 768px) {
             padding: 0;
         }
@@ -95,13 +89,18 @@ const Info = styled.div`
         }
 
         p {
-            font-size: 20px;
+            font-size: 18px;
             width: 75%;
 
             @media screen and (max-width: 768px) {
                 width: 100%;
             }
         }
+`
+
+const Wrap = styled.section`
+    display: flex;
+    flex-direction: column;
 `
 
 const Image = styled.div`
@@ -122,8 +121,10 @@ const MoreMoney = () => {
                 <img src={image} alt="img" />
             </Image>
             <Info>
-                <h2>invest on the go</h2>
-                <p>No matter where you are or where you are going, with a click you can invest a certain portion of your income periodically.</p>
+                <Wrap>
+                    <h2>invest on the go</h2>
+                    <p>No matter where you are or where you are going, with a click you can invest a certain portion of your income periodically.</p>
+                </Wrap>
             </Info>
         </Container>
     )
