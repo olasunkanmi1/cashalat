@@ -15,6 +15,11 @@ const SidebarLink = styled.div`
     // &:hover {
     //     color: #0847A8;
     // }
+    div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 `
 
 const DropdownLink = styled(Link)`
