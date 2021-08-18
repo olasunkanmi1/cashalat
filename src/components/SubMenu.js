@@ -8,7 +8,7 @@ const SidebarLink = styled.div`
     width: 100%;
     align-items: center;
     color: #8D8D8D;
-    font-size: 18px;
+    font-size: 20px;
     height: 45px;
     cursor: pointer;
 
@@ -20,7 +20,7 @@ const SidebarLink = styled.div`
 const DropdownLink = styled(Link)`
     margin-bottom: 10px;
     color: #8D8D8D;
-    font-size: 15px;
+    font-size: 17px;
     margin-left: 20px;
     transition: .5s;
 
