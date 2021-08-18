@@ -1,9 +1,7 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
-import styled, { css } from 'styled-components/macro'
+import styled from 'styled-components/macro'
 import logo from '../images/logo.png'
-import {AiOutlineMenu} from 'react-icons/ai'
-import { AiOutlineClose } from 'react-icons/ai'
 import { menuData } from '../data/MenuData'
 import Sidebar from './Sidebar'
 import './rough.css'
@@ -59,9 +57,19 @@ const Logo = styled(Link)`
 
 const MenuIcon = styled.div`
     display: none;
+    position: relative;
+
+    div {
+        display: ${({ isOpen }) => (isOpen ? "none" : "flex")};
+        height: 3px;
+        background: #0847A8; 
+        width: 80%;
+    }
 
     @media screen and (max-width: 768px) {
-        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         height: 40px;
         width: 40px;
         color: #0847A8;
@@ -72,17 +80,26 @@ const MenuIcon = styled.div`
             width: 35px;
         }
     }
-`
 
-const Bars = styled(AiOutlineMenu)`
-    width: 100%;
-    height: 100%;
-    color: #0847A8;
-`
-const Close = styled(AiOutlineClose)`
-    width: 100%;
-    height: 100%;
-    color: #0847A8;
+    &:before {
+        content: "";
+        position: absolute;
+        width: 80%;
+        height: 3px;
+        background-color: #0847A8;
+        transform: ${({ isOpen }) => (isOpen ? 'translateY(0px) rotate(45deg)' : 'translateY(-10px)')};
+        transition: 0.2s;
+    }
+
+    &:after {
+        content: "";
+        position: absolute;
+        width: 80%;
+        height: 3px;
+        background-color: #0847A8;
+        transition: 0.2s;
+        transform: ${({ isOpen }) => (isOpen ? 'translateY(0px) rotate(-45deg)' : 'translateY(10px)')};
+    }
 `
 
 const MenuItems = styled.div`
@@ -158,7 +175,7 @@ const Header = () => {
             <Logo to="/">
                 <img src={logo} alt="logo" />
             </Logo>
-            <MenuIcon onClick={toggle}>{isOpen ? <Close /> : <Bars />}</MenuIcon>
+            <MenuIcon onClick={toggle} isOpen={isOpen}> <div></div></MenuIcon>
             <MenuItems>
                 {menuData.map((item, index) => (
                     <MenuLinks key={index} className="menu">
