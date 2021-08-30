@@ -138,7 +138,7 @@ const SubMenu = styled.div`
     position: absolute;
     top: 0;
     margin-top: 50px;
-    padding: 20px;
+    padding: 20px 20px 20px 40px;
     display: none;
     z-index: 6;
     background: #fff;
@@ -146,16 +146,29 @@ const SubMenu = styled.div`
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;;
 `
 
-const SubMenuLinks = styled(Link)`
+const SubMenuLinks = styled.div`
+    display: flex;
+    align-items: center;
     margin-bottom: 10px;
-    color: #8D8D8D;
     font-size: 17px;
-    transition: .5s;
+    position: relative;
 
     &:last-child {
         margin-bottom: 0;
     }
+`
 
+const Icon = styled.i`
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: -65px;
+`
+const Title = styled(Link)`
+    color: #8D8D8D;
+    transition: .5s;
+    z-index: 13;
+    
     &:hover {
         color: #0847A8;
     }
@@ -182,8 +195,9 @@ const Header = () => {
                         {item.title} 
                         <SubMenu className="sub-menu">
                             {item.submenu.map((item, index) => (
-                                <SubMenuLinks key={index} to={item.link}>
-                                    {item.title}
+                                <SubMenuLinks key={index}>
+                                    <Icon><img src={item.icon} alt='icon' /></Icon> 
+                                    <Title to={item.link}>{item.title}</Title>
                                 </SubMenuLinks>
                             ))}
                         </SubMenu>

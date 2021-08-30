@@ -22,13 +22,31 @@ const SidebarLink = styled.div`
     }
 `
 
-const DropdownLink = styled(Link)`
+const DropdownLink = styled.div`
     margin-bottom: 10px;
     color: #8D8D8D;
-    font-size: 17px;
+    font-size: 18px;
     margin-left: 20px;
     transition: .5s;
+    position: relative;
 
+    &:hover {
+        color: #0847A8;
+    }
+`
+
+const Icon = styled.i`
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: -65px;
+    top: -41px;
+`
+const Title = styled(Link)`
+    color: #8D8D8D;
+    transition: .5s;
+    z-index: 13;
+    
     &:hover {
         color: #0847A8;
     }
@@ -52,10 +70,9 @@ const SubMenu = ({ item, toggle }) => {
             </SidebarLink>
             {submenu && item.submenu.map((item, index) => {
                 return (
-                    <DropdownLink to={item.link} key={index} onClick={toggle}>
-                        <div>
-                            {item.title}
-                        </div>
+                    <DropdownLink key={index} onClick={toggle}>
+                        <Icon><img src={item.icon} alt='icon' /></Icon> 
+                        <Title to={item.link}>{item.title}</Title>
                     </DropdownLink>
                 )
             })}

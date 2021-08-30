@@ -4,16 +4,12 @@ import image3 from '../images/savings.png'
 import image4 from '../images/diversify.png'
 import image5 from '../images/payments.png'
 import image6 from '../images/loans.png'
-import playstore from '../images/playstore.png'
-import applestore from '../images/applestore.png'
 
 
 
 export const experience = {
     heading: 'experience banking built around you',
     paragraph: 'Next generation banking that leverages technology for digital savings and Investment options to create wealth for under served and middle class in Nigeria.',
-    playstore: playstore,
-    applestore: applestore,
     image: image1
 }
 
