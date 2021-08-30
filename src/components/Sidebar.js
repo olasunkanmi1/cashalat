@@ -9,8 +9,8 @@ const Container = styled.div`
     flex-direction: column;
     width: 100%;
     background: #fff;
-    z-index: 13;
     position: fixed;
+    z-index: 99;
     top: 0;
     right: 0;
     transition: .2s ease-in-out;
