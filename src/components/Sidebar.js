@@ -9,7 +9,7 @@ const Container = styled.div`
     flex-direction: column;
     width: 100%;
     background: #fff;
-    z-index: 9;
+    z-index: 13;
     position: fixed;
     top: 0;
     right: 0;

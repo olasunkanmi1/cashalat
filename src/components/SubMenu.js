@@ -11,10 +11,11 @@ const SidebarLink = styled.div`
     font-size: 20px;
     height: 45px;
     cursor: pointer;
+    z-index: 19;
 
-    // &:hover {
-    //     color: #0847A8;
-    // }
+    &:hover {
+        color: #0847A8;
+    }
     div {
         display: flex;
         justify-content: center;
@@ -29,6 +30,7 @@ const DropdownLink = styled.div`
     margin-left: 20px;
     transition: .5s;
     position: relative;
+    z-index: 19;
 
     &:hover {
         color: #0847A8;
@@ -41,11 +43,12 @@ const Icon = styled.i`
     height: 100px;
     left: -65px;
     top: -41px;
+    z-index: 13;
 `
 const Title = styled(Link)`
     color: #8D8D8D;
     transition: .5s;
-    z-index: 13;
+    z-index: 19;
     
     &:hover {
         color: #0847A8;
@@ -70,9 +73,9 @@ const SubMenu = ({ item, toggle }) => {
             </SidebarLink>
             {submenu && item.submenu.map((item, index) => {
                 return (
-                    <DropdownLink key={index} onClick={toggle}>
+                    <DropdownLink key={index}>
                         <Icon><img src={item.icon} alt='icon' /></Icon> 
-                        <Title to={item.link}>{item.title}</Title>
+                        <Title to={item.link} onClick={toggle}>{item.title}</Title>
                     </DropdownLink>
                 )
             })}
