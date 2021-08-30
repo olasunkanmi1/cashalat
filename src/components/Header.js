@@ -14,7 +14,7 @@ const Container = styled.section`
     height: 85px;
     width: 100%;
     padding: 1rem 12rem;
-    z-index: 10;
+    z-index: 100;
     position: fixed;
     top: 0;
     background: #fff;
