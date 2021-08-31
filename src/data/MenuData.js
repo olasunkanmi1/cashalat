@@ -6,7 +6,7 @@ import savings from '../images/icons/Savings.svg'
 import investments from '../images/icons/Investments.svg'
 import loans from '../images/icons/Loans.svg'
 import payments from '../images/icons/Payment.svg'
-import faqs from '../images/icons/AboutUs.svg'
+import faqs from '../images/icons/Faqs.svg'
 import contact from '../images/icons/AboutUs.svg'
 
 
