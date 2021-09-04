@@ -4,7 +4,7 @@ import styled from 'styled-components/macro'
 import logo from '../images/logo.png'
 import { menuData } from '../data/MenuData'
 import Sidebar from './Sidebar'
-import './index.cs'
+import './index.css'
 
 //styles
 const Container = styled.section`
