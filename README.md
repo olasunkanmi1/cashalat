@@ -1,1 +1,1 @@
-Landing pages for a FinTech website that help people invest, save, make payments and take loans. Created with react.
+Landing pages for a FinTech website that help people invest, save, make payments and take loans.
