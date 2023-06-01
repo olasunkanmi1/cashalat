@@ -140,7 +140,6 @@ const FeatureLoans = () => {
     useEffect(() => {
         window.scrollTo(0,0)
     }, [])
-
     return (
         <Container>
             <h1>get instant funds when you need it.</h1>

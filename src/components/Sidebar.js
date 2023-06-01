@@ -1,7 +1,6 @@
-import React, { useState } from 'react'
-import styled, { css } from 'styled-components/macro'
+import React from 'react'
+import styled from 'styled-components/macro'
 import { menuData } from '../data/MenuData'
-import { Link } from 'react-router-dom'
 import SubMenu from './SubMenu'
 
 const Container = styled.div`

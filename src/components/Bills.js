@@ -58,35 +58,35 @@ const Container = styled.section`
 `
 
 const Info = styled.div`
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 
-        h2 {
-            font-size: 50px;
-            color: #0847A8;
-            margin-bottom: 15px;
-            
-            @media screen and (max-width: 925px) {
-                font-size: 40px;
-            }
-    
-            @media screen and (max-width: 460px) {
-                font-size: 30px;
-            }
+    h2 {
+        font-size: 50px;
+        color: #0847A8;
+        margin-bottom: 15px;
+        
+        @media screen and (max-width: 925px) {
+            font-size: 40px;
         }
 
-        p {
-            width: 75%;
-            font-size: 18px;
-
-            @media screen and (max-width: 768px) {
-                width: 100%;
-            }
-            @media screen and (max-width: 500px) {
-                font-size: 15px;
-            }
+        @media screen and (max-width: 460px) {
+            font-size: 30px;
         }
+    }
+
+    p {
+        width: 75%;
+        font-size: 18px;
+
+        @media screen and (max-width: 768px) {
+            width: 100%;
+        }
+        @media screen and (max-width: 500px) {
+            font-size: 15px;
+        }
+    }
 `
 
 const Wrap = styled.section`
@@ -95,26 +95,27 @@ const Wrap = styled.section`
 `
 
 const Image = styled.div`
-        padding-left: 8rem;
+    padding-left: 8rem;
 
-        @media screen and (max-width: 1300px) {
-            padding-left: 4rem;
-        }
-        
-        @media screen and (max-width: 950px) {
-            padding-left: 1rem;
-        }
+    @media screen and (max-width: 1300px) {
+        padding-left: 4rem;
+    }
 
-        @media screen and (max-width: 768px) {
-            border-radius: 40px;
-            padding-left: 0rem;
-            overflow: hidden;
-            margin-top: 1rem;
-        }
+    @media screen and (max-width: 950px) {
+        padding-left: 1rem;
+    }
+
+    @media screen and (max-width: 768px) {
+        border-radius: 40px;
+        padding-left: 0rem;
+        overflow: hidden;
+        margin-top: 1rem;
+    }
+
     img {
         width: 100%;
         height: 100%;
-        object-fit: cover:
+        object-fit: cover;
         border-radius:  40px;
     }
 `

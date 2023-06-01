@@ -1,6 +1,5 @@
 import React from 'react'
-import styled, { css } from 'styled-components/macro'
-import { Link } from 'react-router-dom'
+import styled from 'styled-components/macro'
 
 //components
 import Newsletter from './Newsletter'
@@ -90,7 +89,7 @@ const Info = styled.div`
     }
 `
 
-const Download = styled .div`  
+const Download = styled.div`  
     display: flex;
     justify-content: space-between;
     margin-bottom: 15px;

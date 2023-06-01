@@ -10,7 +10,7 @@ const GlobalStyles = createGlobalStyle`
     html, body {
         width: 100vw;
         overflow-x: hidden;
-        scroll-behavior: smooth;
+        padding-top: 30px;
     }
 
     a {

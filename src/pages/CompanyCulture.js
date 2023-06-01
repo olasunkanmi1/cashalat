@@ -1,12 +1,9 @@
-import React, { useEffect } from 'react'
+import React, {useEffect} from 'react'
 
 //components
-import Careers from '../components/Careers'
-import Culture from '../components/Culture'
-
+import {Careers, Culture} from '../components'
 
 const CompanyCulture = () => {
-
     useEffect(() => {
         window.scrollTo(0,0)
     }, [])

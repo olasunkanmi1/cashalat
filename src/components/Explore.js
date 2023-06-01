@@ -129,7 +129,7 @@ const Explore = () => {
                 <h4>Enjoy the best interest rates on any plan of your choice.</h4>
             </div>
             <Image>
-                <img src={image} alt="image" />
+                <img src={image} alt="illustration" />
             </Image>
         </Container>
     )

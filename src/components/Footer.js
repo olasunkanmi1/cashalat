@@ -1,6 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
-import styled, { css } from 'styled-components/macro'
+import styled from 'styled-components/macro'
 import logo from '../images/logo2.png'
 import Download from './Download'
 
@@ -43,7 +42,7 @@ const Container = styled.footer`
 `
 
 const Logo = styled.div`
-    display: flex
+    display: flex;
     align-items: center;
     position: relative;
 

@@ -1,15 +1,13 @@
-import React, { useEffect } from 'react'
+import React, {useEffect} from 'react'
 
 //components
-import Vismis from '../components/Vismis'
-import Journey from '../components/Journey'
+import {Vismis, Journey} from '../components'
 
 const Company = () => {
-
     useEffect(() => {
         window.scrollTo(0,0)
     }, [])
-
+    
     return (
         <>
             <Vismis />

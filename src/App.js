@@ -3,21 +3,13 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import GlobalStyles from "./GlobalStyles";
 
 // components
-import Header from "./components/Header";
-import Footer from './components/Footer';
+import {Header, Footer} from "./components";
 
 // pages
-import Homepage from "./pages/Homepage";
-import Company from './pages/Company';
-import FeatureSavings from './pages/FeatureSavings';
-import FeatureInvestments from './pages/FeatureInvestments';
-import FeatureLoans from './pages/FeatureLoans';
-import FeaturePayments from './pages/FeaturePayments';
-import CompanyCulture from './pages/CompanyCulture';
+import {Homepage, Company, FeatureSavings, FeatureInvestments, FeatureLoans, FeaturePayments, CompanyCulture} from "./pages";
 
 function App() {
-
-  return (
+ return (
     <Router>
       <GlobalStyles />
       <Header/>

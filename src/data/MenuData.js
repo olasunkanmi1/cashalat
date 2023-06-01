@@ -1,4 +1,3 @@
-import * as FaIcons from 'react-icons/fa'
 import * as RiIcons from 'react-icons/ri'
 import about from '../images/icons/AboutUs.svg'
 import careers from '../images/icons/Careers.svg'

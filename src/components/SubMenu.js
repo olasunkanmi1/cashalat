@@ -11,6 +11,7 @@ const SidebarLink = styled.div`
     font-size: 20px;
     height: 45px;
     cursor: pointer;
+    z-index: 20;
 
     &:hover {
         color: #0847A8;
@@ -23,6 +24,9 @@ const SidebarLink = styled.div`
 `
 
 const DropdownLink = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     margin-bottom: 10px;
     color: #8D8D8D;
@@ -42,11 +46,13 @@ const Icon = styled.i`
     height: 100px;
     left: -65px;
     top: -41px;
-    z-index: 99;
+    z-index: 1;
 `
 const Title = styled(Link)`
+    /* min-width: calc(100% - 20px); */
+    min-width: 100%;
+    text-align: center;
     color: #8D8D8D;
-    width: 100%;
     transition: .5s;
     z-index: 101;
     

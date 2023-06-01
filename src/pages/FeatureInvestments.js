@@ -1,16 +1,13 @@
 import React, {useEffect} from 'react'
 
 //components
-import MoreMoney from '../components/MoreMoney'
-import OnTheGo from '../components/OnTheGo'
-import Barriers from '../components/Barriers'
+import {MoreMoney, OnTheGo, Barriers} from '../components'
 
 const FeatureInvestments = () => {
-
     useEffect(() => {
         window.scrollTo(0,0)
     }, [])
-
+    
     return (
         <>
             <MoreMoney />

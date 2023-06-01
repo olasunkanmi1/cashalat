@@ -299,7 +299,7 @@ const Vismis = () => {
             </Head>
             <Vis>
                 <Image1>
-                    <img src={image} alt="image" />
+                    <img src={image} alt="illustration" />
                 </Image1>
                 <Info1>
                     <div>Vision</div>
@@ -313,7 +313,7 @@ const Vismis = () => {
                     <p>Building the next generation banking that leverages technology to create wealth for all.</p>
                 </Info2>
                 <Image2>
-                    <img src={image2} alt="image" />
+                    <img src={image2} alt="illustration" />
                 </Image2>
             </Mis>
         </Container>

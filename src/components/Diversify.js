@@ -1,5 +1,5 @@
 import React from 'react'
-import styled, { css } from 'styled-components/macro'
+import styled from 'styled-components/macro'
 
 //styles
 const Container = styled.section`
@@ -40,7 +40,7 @@ const Container = styled.section`
 
 const Image = styled.div`
     display: flex;
-    align-iems: center;
+    align-items: center;
     
     img {
         width: 100%;
